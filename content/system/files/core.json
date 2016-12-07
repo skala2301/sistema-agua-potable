@@ -1,0 +1,9 @@
+{
+    "version" : "1.0.0",
+    "name"    : "Garrobo ",
+    "server"   : "http://",
+  "langs"     : {
+    "es"   : "Español",
+    "en"   : "English"
+  }
+}

@@ -1,0 +1,164 @@
+{
+    "en": {
+        
+      "login": {
+           
+           "enter" : "Enter any username and password",
+           "password" : "Forgot Password?",
+           "in" : "Sign In",
+           "inputs" : 
+                   {
+                       "username" : "Username",
+                       "password" : "Password",
+                       "remember" : "Remember",
+                       "email"    : "E-mail",
+                       "submit"   : "Submit",
+                       "back"     : "Back",
+                       "login"    : "Login",
+                       "wait"     : "Wait a moment"
+                   },
+           "forgot" : "Enter your e-mail address below to reset your password.",
+           "forget" : "Forget your password?",
+           "errors" : {
+               "user" : "User not found !!",
+               "bdd"  : "This user not exists ",
+               "activate" : "your account is inactive.",
+               "password" : "your password is wrong"
+           }
+       },
+      "log" : {
+        "session" :
+        {
+          "start" : "Session start",
+          "end"   : "End session"
+        },
+        "profile":
+        {
+          "avatar" : "Avatar has been change in "
+        }
+      },
+      "system" : {
+                   "core" : 
+                   {
+                       "request" : 
+                       {
+                           "error_database"             : "The database is no connected",
+                           "error_message"              : "Token fail",
+                           "error_denied"               : "Access Denied or not exist function",
+                           "error_message_function"     : "No function to execute",
+                           "error_message_model_asign"  : "Not exist this model in asign location",
+                           "error_image_upload"         : "Sorry this not a correct image to upload",
+                           "error_image_upload_title"   : "No image to upload",
+                           "error_message_model"        : "No call to action , please verify.",
+                           "error_password_empty"       : "Password current empty",
+                           "error_password_equals"      : "The old password is incorrect",
+                           "error_password_used"        : "for security reasons this password can not be placed because it has already used , [%denied%] denied",
+                           "success_password_change"    : "The password has been change !! [awesome]",
+                           "error_advance"              : " Sorry , we were unable to save data",
+                           "error_create_file"          : "Sorry don't have permission to create a file ",
+                           "success_advance"            : "The Request has been success"
+                       }
+                   },
+                   "email" : {
+                        "protocol" : "Protocol",
+                        "host"     : "Host ",
+                        "port"     : "Port",
+                        "timeout"  : "Timeout",
+                        "user"     : "User",
+                        "password" : "Password",
+                        "save"     : "Save All"
+
+                   }
+               },
+      "profile" : {
+        "tabs" : {
+              "t1" : "Personal Info",
+              "t2" : "Change avatar",
+              "t3" : "Change password",
+              "t4" : "Log",
+              "t5" : "Advanced"
+          },
+        "about" : {
+            "about"         : "About to ",
+            "account"       : "Profile Account"
+         },
+        "personal" :{
+            "name"          : "Name",
+            "last_name"     : "Last name",
+            "user"          : "User",
+            "occupation"    : "Occupation",
+            "location"      : "Location",
+            "website"       : "Website",
+            "save"          : "Save changes",
+            "cancel"        : "Cancel",
+            "saving"        : "Saving",
+            "language"      : "Language",
+            "no_img"        : "no+image+:(",
+            "attach"        : "Attached image thumbnail is supported in Latest Firefox, Chrome, Opera, Safari and Internet Explorer 10 only",
+            "note"          : "NOTE! "
+         },
+        "image"             :{
+            "select"        : "Select image",
+            "remove"        : "Remove",
+            "change"        : "Change",
+            "cancel"        : "Cancel",
+            "save"          : "Save"
+        },
+        "password"          :{
+            "current"       : "Current Password",
+            "new"           : "New Password",
+            "re-type"       : "Re-type New Password",
+            "change"        : "Change Password",
+            "cancel"        : "Cancel",
+            "password_change": " The password has been change in "
+        },
+        "alerts"            : {
+            "header"        : "Profile Update",
+            "updated"       : "The profile has been updated",
+            "warning"       : "Warning !!",
+            "Success"       : "Success !!"
+        }
+      }
+      
+   
+    },
+    "es": {
+        
+        "login": {
+           
+           "enter" : "Usuario y Contraseña",
+           "password" : "Ha olvidado su contraseña?",
+           "in":"Logueate",
+           "inputs" : 
+                   {
+                       "username" : "Usuario",
+                       "password" : "Contraseña",
+                       "remember" : "Recordar",
+                       "email"    : "E-mail",
+                       "submit"   : "Enviar",
+                       "back"     : "Atras",
+                       "login"    : "Logueate",
+                       "wait"     : "Espere"
+                   },
+         "forgot" : "Introduce tu direccion de correo electronico para restablecer tu contraseña",
+          "forget" : "Olvidastes tu contraseña?",
+           "errors" : {
+               "user" : "Usuario o Correo no registrado",
+               "bdd"  : "Este usuario ya no esta dentro de la base de datos..",
+               "activate" : "Tu cuenta esta inactiva.",
+               "password": "Tu contraseña es erronea"
+           }
+       },
+        "system" :
+               {
+                   "core" : 
+                   {
+                       "request" : 
+                       {
+                           "error_message" : "Peticion Fallida"
+                       }
+                   }
+               }
+    }
+
+}

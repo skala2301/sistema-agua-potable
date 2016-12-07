@@ -1,0 +1,8 @@
+{
+  "front-test":
+  {
+    "dir"     : "frontend",
+    "model"   : "main",
+    "action"  : "dothat"
+  }
+}

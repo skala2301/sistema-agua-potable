@@ -1,0 +1,22 @@
+.input_disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.input_disabled:hover {
+    border: 1px solid red;
+    background-color: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#26759e, endColorstr=#133d5b);
+}
+
+.input_disabled:hover {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border: 1px solid #25729a;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: red;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
+}

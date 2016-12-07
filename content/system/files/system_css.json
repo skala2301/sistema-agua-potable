@@ -1,0 +1,54 @@
+{
+    "bootstrap": {
+        "version": "3.3.6",
+        "name": "bootstrap.min.css",
+        "location": "content/system/core/css/global/bootstrap/",
+        "server": ""
+    },
+    "bootstrap-theme": {
+        "version": "3.3.6",
+        "name": "bootstrap/bootstrap-theme.min.css",
+        "server": ""
+    },
+    "fontawesome": {
+        "version": "4.6.3",
+        "name": "font_awesome/font-awesome.min.css",
+        "server": ""
+    },
+    "animate": {
+        "version": "1.0.0",
+        "name": "animate/animate.css",
+        "server": ""
+    },
+    "garrobo": {
+        "version": "1.0.0",
+        "name": "ga_dashboard.css",
+        "location": "content/system/core/css/core/",
+        "server": ""
+    },
+
+    "ga_format": {
+        "version": "1.0.0",
+        "name": "ga_format.css",
+        "location": "content/system/core/css/garrobo/",
+        "server": ""
+    },
+
+    "select2": 
+            {
+                "version": "4.0.0",
+                "name": "select2.min.css",
+                "location": "content/system/core/css/global/select2/",
+                "server": ""
+            },
+            
+    
+    "select2-bootstrap": 
+            {
+                "version": "4.0.0",
+                "name": "select2-bootstrap.min.css",
+                "location": "content/system/core/css/global/select2/",
+                "server": ""
+            }
+}
+

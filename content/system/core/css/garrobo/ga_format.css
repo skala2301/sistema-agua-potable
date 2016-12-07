@@ -1,0 +1,33 @@
+
+/**
+    Author     : Rolando arriaza
+    since      : 10-10-16
+    lincense   :MIT
+**/
+
+/**
+disabled a input type text , password or text area
+**/
+
+.data_disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.data_disabled:hover {
+    border: 1px solid red;
+    background-color: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#26759e, endColorstr=#133d5b);
+}
+
+.data_disabled:hover {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border: 1px solid #25729a;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: red;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
+}

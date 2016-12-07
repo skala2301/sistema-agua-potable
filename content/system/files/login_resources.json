@@ -1,0 +1,56 @@
+{
+   
+    
+    "addons" : 
+            {
+                "login_with" : 
+                {
+                    "facebook" : {
+                        "status" : "1",
+                        "url" : "",
+                        "icon" : ""
+                    },
+                    
+                     "twitter" : {
+                        "status" : "1",
+                        "url" : "",
+                        "icon" : ""
+                    },
+                    
+                     "google" : {
+                        "status" : "1",
+                        "url" : "",
+                        "icon" : ""
+                    }
+                    
+                }
+                
+            },
+     "themes" : {
+         
+         "0" : {
+             "name" : "Garrobo Theme",
+             "views" : {
+                  "header"      : "system/login/theme1/header",
+                  "content"     : "system/login/theme1/index",
+                  "footer"      : "system/login/theme1/footer"
+             },
+             "version" : "1.0.0",
+             "activate" : "1",
+             "id" : "1"
+         },
+         
+         "1" : {
+             "name" : "Garrobo Theme Version LITE ",
+             "views" : {
+                  "header"      : "system/login/theme1/header",
+                  "content"     : "system/login/theme1/index",
+                  "footer"      : "system/login/theme1/footer"
+             },
+             "version" : "1.0.0",
+             "activate" : "0",
+             "id" : "2"
+         }
+         
+     }
+}
