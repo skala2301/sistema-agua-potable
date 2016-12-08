@@ -3,7 +3,6 @@
 
 
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 $config['garrobo_version'] = "1.2.5";
 
 

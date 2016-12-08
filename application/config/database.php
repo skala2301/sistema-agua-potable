@@ -68,7 +68,7 @@ $debug =  system_debug();
 
 if($debug){
 $db['default'] = array(
-	'dsn'	    => 'mysql:host=localhost;dbname=mytrip',
+	'dsn'	    => 'mysql:host=localhost;dbname=potable',
 	'hostname'  => '',
 	'username'  => 'root',
 	'password'  => '',
