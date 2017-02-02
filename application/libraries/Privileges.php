@@ -59,7 +59,6 @@ class Privileges extends User
         return $this;
     }
 
-
     public function result()
     {
 
@@ -133,8 +132,7 @@ class Privileges extends User
 
 
     }
-    
-    
+
     public function get_all_rols()
     {
        $rols = str_replace("[table1]", $this->table1, $this->sql['get']);

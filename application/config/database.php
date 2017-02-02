@@ -68,10 +68,10 @@ $debug =  system_debug();
 
 if($debug){
 $db['default'] = array(
-	'dsn'	    => 'mysql:host=localhost;dbname=potable',
+	'dsn'	    => 'mysql:host=localhost;dbname=scada',
 	'hostname'  => '',
 	'username'  => 'root',
-	'password'  => '',
+	'password'  => 'root',
 	'database'  => '',
 	'dbdriver'  => 'pdo',
 	'dbprefix'  => 'ga_',
@@ -96,10 +96,10 @@ else
 
 	'dsn'	=> '',
 	'hostname' => '',
-	'username' => '',
+	'username' => 'root',
 	'password' => '',
 	'database' => '',
-	'dbdriver' => 'mysqli',
+	'dbdriver' => 'pdo',
 	'dbprefix' => 'ga_',
 	'pconnect' => FALSE,
 	'db_debug' => TRUE,

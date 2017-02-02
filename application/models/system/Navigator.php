@@ -52,10 +52,20 @@ class Navigator extends CI_Model implements CoreInterface
         $this->load->database();
         $this->querys       = (object) $this->querys;
         $this->table_nav    = $this->db->dbprefix("nav");
+
+        $this->load->library("navbar");
+        $this->load->library("operator");
     }
 
 
-    public function get_navs( $separate = true )
+
+    public function get_sub_menus() : string
+    {
+        return json_encode($this->get_navs( true , "sub_menu"));
+    }
+
+
+    public function get_navs( $separate = true  , $filter = null )
     {
 
         $this->querys->consult = str_replace("[table]" , $this->table_nav , $this->querys->consult);
@@ -76,52 +86,261 @@ class Navigator extends CI_Model implements CoreInterface
             $this->nav_order[$r->type][] = $r ;
         }
 
-        return $this->nav_order;
+        if(is_null($filter))
+            return $this->nav_order;
+
+        switch ($filter)
+        {
+            case "sub_menu":
+                return $this->nav_order['sub_menu'];
+            case "namespace" :
+                return $this->nav_order['sub_menu'];
+            case "section":
+                return $this->nav_order['sub_menu'];
+            case "sidebar" :
+                return $this->nav_order['sub_menu'];
+            default:
+                return $this->nav_order;
+        }
+    }
+
+    public function Save() : string {
+
+        $values                 = array();
+        $dnames                 = array();
+        $convert_names          = array();
+        $objects                = array();
+
+        $serial = $this->input->post("data");
+        $target = $this->input->post("target");
+        $privs  = $this->input->post("privs");
+        $names  = $this->input->post("names");
+
+        switch ($target)
+        {
+            case NAV_NAMESPACE :
+            case NAV_SECTION:
+            case NAV_SIDEBAR:
+            case NAV_SUBMENU:
+                break;
+            default:
+                return json_encode([
+                    "error"             => true ,
+                    "message"           => "Esta categoria [$target] no existe favor verificar.",
+                    "warning"           => false
+                ]);
+        }
+
+
+        parse_str($serial , $values);
+        parse_str($names , $dnames);
+
+        $dnames = $dnames['names'];
+        foreach($dnames as $vnames)
+        {
+            $convert_names[$vnames['lang']] =  $vnames['value'];
+        }
+
+
+        $objects = [
+            "icon"              => $values['txt-icon'] ,
+            "redirect"          => $values['txt-redirect'],
+            "target"            => $values['txt-target'],
+            "place"             => $values['txt-place'],
+            "divider"           => $values['txt-divider'] == 1 ? 'true' : 'false'
+        ];
+
+
+        $operator = random_string('md5');
+
+
+        $insert_data = [
+            "type"            => $target,
+            "name"            => json_encode($convert_names),
+            "location"        => $values['txt-location'] ,
+            "route"           => $values['txt-route'] ,
+            "objects"         => json_encode($objects),
+            "components"      => $values['txt-components'] ,
+            "parent"          => $values['txt-parent-id'] ,
+            "origins"         => $values['txt-origin'],
+            "active"          => 1,
+            "privs"           => $privs ,
+            "token"           => $values['txt-token'] ,
+            "operator"        => $operator
+        ];
+
+
+
+        $this->db->insert($this->table_nav , $insert_data);
+
+        $insert_id = $this->db->insert_id() ;
+        $affected  = $this->db->affected_rows();
+
+        $query = "INSERT GA_NAV , PARAMS(" . serialize($insert_data) . ") , ID($insert_id)";
+
+
+        $operator = $this->operator->create_insert_operator(
+            $this->user->get()->id(),
+            $query,
+            $operator,
+            $affected,
+            $this->table_nav
+        );
+
+
+        unset($affected);
+        unset($insert_data);
+        unset($objects);
+        unset($convert_names);
+        unset($dnames);
+        unset($values);
+        unset($query);
+
+        if($insert_id > 0  && $operator >= 1 )
+        {
+            return json_encode([
+                "error"             => false ,
+                "message"           => 'Navegador creado con exito !! (Operador pendiente de revision)',
+                "warning"           => false
+            ]);
+        }
+        else if($operator == 0 && $insert_id >= 1)
+        {
+            return json_encode([
+                "error"             => false ,
+                "message"           => 'Operador no se pudo crear para esta insercion',
+                "warning"           => true
+            ]);
+        }
+        else if($insert_id == 0 || $insert_id == null && $operator == 0)
+        {
+            return json_encode([
+                "error"             => true  ,
+                "message"           => 'No se pudo realizar la insercion.',
+                "warning"           => false
+            ]);
+        }
+
+
+        return json_encode([
+            "error"             => true  ,
+            "message"           => 'ejecucion con valores devueltos inesperados',
+            "warning"           => true
+        ]);
+
 
     }
 
-
-
-    /**
-     * @name create_operator
-     * @todo crear un caso de operador , posiblemente la funcion mas importante en el
-     *       hecho de desarrollo parametrico
-     *
-     * @author Rolando Arriaza
-     * @version 1.0.0
-     * @since 1.0.0
-     * @param array $params , serie de parametros que se necesitan
-     * @param int $id_user_operator el id del operador , opcional en dado caso no exista se tomara el id usuario actual
-     * @return stdclass key_returned  if only id_operator dont exist  else count
-     *
-     * @modify:
-     *              ID                AUTHOR                  DESCRIPTION                 DATE
-     *              0               ROLANDO ARRIAZA         CREAR FUNCION               25-11-16
-     *
-     * @description:
-     *
-     *
-     *
-     ***/
-
-    public function set_new_nav(
-        $type ,
-        $name ,
-        $location ,
-        $route ,
-        $objects)
+    public function Edit()
     {
+        $data_request = $this->input->post("data");
+        $data_review  = [];
+        $id = null;
+
+
+        foreach($data_request as $request){
+
+            switch ($request['name'])
+            {
+                case "id":
+                    $id  = $request['data'] ?? null ;
+                    break;
+                case "nav_type":
+                    $data_review['type'] = $request['data'] ?? null ;
+                    break;
+                case "privs-loaders":
+                    $data_review['privs'] =  !empty($request['data']) ? implode("," , $request['data']) : 0;
+                    break;
+                default:
+                    $data_review[$request['name']] = $request['data'] ?? null ;
+                    break;
+            }
+
+
+
+
+        }
+
+        if(isset($data_review['id'])) unset($data_review['id']);
+
+        $result = $this->navbar->edit_nav_byId($id , $data_review);
+
+        if($result >= 1)
+        {
+            $operator = $this->navbar->get_operator($id);
+
+            $query = "UPDATE GA_NAV , PARAMS(" . serialize($data_review) . ") , ID($id)";
+
+            $op_result = $this->operator
+                              ->create_update_basic_operator($this->user->get()->id(),
+                                  $query ,
+                                  $operator ,
+                                  $result ,
+                                  $this->db->dbprefix("nav"));
+
+
+            if($operator == NULL )
+            {
+                $this->navbar->update_operator($id , $op_result[0]->key_returned ?? NULL);
+            }
+
+        }
+
+        return $result;
 
     }
 
+    public function Delete($id=null )
+    {
+        $id = $id != null ? $id : $this->input->post("id");
+
+        if(is_null($id)) return false;
+        $result = $this->navbar->delete_nav_byId($id);
+
+        if($result >= 1)
+        {
+            $operator = $this->navbar->get_operator($id);
+
+            $query = "DELETE GA_NAV , PARAMS(" . serialize(["id" => $id ]) . ") , ID($id)";
+
+            $op_result = $this->operator
+                ->create_update_basic_operator($this->user->get()->id(),
+                    $query ,
+                    $operator ,
+                    $result ,
+                    $this->db->dbprefix("nav"));
+
+
+            if($operator == NULL )
+            {
+                $this->navbar->update_operator($id , $op_result[0]->key_returned ?? NULL);
+            }
+
+        }
+
+
+        return $result >= 1 ? 1 : 0;
+    }
+
+    public function get_navs_meta($array = false)
+    {
+        $this->load->library("meta");
+        switch($array)
+        {
+            case true :
+                 return $this->meta->get_meta_value("nav_data" , true );
+                break;
+            case false :
+                return  (object) $this->meta->get("nav_data")[0] ?? NULL ;
+        }
+
+    }
 
     public function tree_navs()
     {
 
         $navs   = $this->get_navs();
         $nodes  = [];
-
-
 
         $i = 0;
         foreach ($navs['namespace'] as $namespace )
@@ -135,7 +354,7 @@ class Navigator extends CI_Model implements CoreInterface
             $nodes[$i]->privs       = $namespace->privs;
             $nodes[$i]->token       = $namespace->token;
             $nodes[$i]->components  = $namespace->components;
-
+            $nodes[$i]->type        = $namespace->type;
 
             $section_ = [];
 
@@ -156,7 +375,8 @@ class Navigator extends CI_Model implements CoreInterface
                         "components"        => $sections->components,
                         "origins"           => $sections->origins,
                         "sidebars"          => $sidebar_section,
-                        "parent"            => $sections->parent 
+                        "parent"            => $sections->parent ,
+                        "type"              => $sections->type
                     ];
 
                 }
@@ -190,7 +410,8 @@ class Navigator extends CI_Model implements CoreInterface
                     "origins"           => $sidebar->origins,
                     "location"          => $sidebar->location,
                     "route"             => $sidebar->route,
-                    "parent"            => $sidebar->parent
+                    "parent"            => $sidebar->parent,
+                    "type"              => $sidebar->type
                 ];
             }
         }
@@ -214,6 +435,8 @@ class Navigator extends CI_Model implements CoreInterface
      * Don´t forget the return  and the boolean TRUE
      *
      */
+
+
     public function _render($params = NULL)
     {
 
@@ -226,7 +449,8 @@ class Navigator extends CI_Model implements CoreInterface
         return $this->load->view('system/navigator/show' , [
             "navs"       => $this->tree_navs(),
             "lang"       => $this->user->get()->user_lang(),
-            "privs"      => $this->privs->get_all_rols()
+            "privs"      => $this->privs->get_all_rols(),
+            "navs_meta"  => $this->get_navs_meta(true)
         ] , TRUE);
         
     }
@@ -330,18 +554,19 @@ class Navigator extends CI_Model implements CoreInterface
                 "script"        => site_url() . 'content/assets/global/plugins/jstree/dist/jstree.min.js',
                 "systemjs"      => false
             ) ,//script exclusivo de navigator
-            
+
+
             array(
                 "type"          => "text/javascript" ,
                 "location"      => "header" ,
                 "script"        => site_url() . 'content/system/core/apps/navigator/loaders.js'
             ) ,//script exclusivo de navigator
-            
+
             array(
                 "type"          => "text/babel" ,
                 "location"      => "header" ,
-                "script"        => site_url() . 'content/system/core/js/garrobo/nav_render.js'
-            ) ,
+                "script"        => site_url() . 'content/system/core/apps/navigator/nav_render.js'
+            ) ,//script sclusivo de navigator
             
             array(
                 "type"          => "text/javascript",
@@ -349,6 +574,9 @@ class Navigator extends CI_Model implements CoreInterface
                 "script"        => print_javascript("select2", "url"),
                 "systemjs"      => false 
             )
+
+
+
         ];
     }
 
@@ -412,6 +640,7 @@ class Navigator extends CI_Model implements CoreInterface
     public function _privileges()
     {
         // TODO: Implement _privileges() method.
+
     }
 
     /**
@@ -429,6 +658,7 @@ class Navigator extends CI_Model implements CoreInterface
     public function _actions()
     {
         // TODO: Implement _actions() method.
+        return ( "admin" );
     }
 
 

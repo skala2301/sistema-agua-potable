@@ -1,5 +1,6 @@
 <body class=" login">
 
+
     <input type="hidden" id="url" value="<?php echo site_url(); ?>" />
     <!-- BEGIN LOGO -->
     <div class="logo">
@@ -10,7 +11,7 @@
     <!-- BEGIN LOGIN -->
     <div class="content">
         <!-- BEGIN LOGIN FORM -->
-        <?php echo form_open("Dashboard/Request" , 
+        <?= form_open("Dashboard/Request" ,
                 [ 
                     "method"        => "post" , 
                     "id"            => "login_form" , 
@@ -19,8 +20,9 @@
                     "dir"       => "system" , 
                     "model"     => "admin_core" , 
                     "function"  => "get_login" , 
-                    "lang"      => $lang ?? "en",
-                    "token"     => "453gtGJRTOP5600@#FGjkcvbsssaq2"]); ?>
+                    "lang"      => $lang ?? "es",
+                    "token"     => "453gtGJRTOP5600@#FGjkcvbsssaq2"]);
+          ?>
              
             <h3 class="form-title font-green"><?php echo core_lang([ "login", "in"]); ?></h3>
             <div id="class_error" class="alert alert-danger display-hide">
@@ -58,10 +60,10 @@
                 </ul>
             </div>
 
-        <?php echo form_close(); ?>
+        <?= form_close(); ?>
         <!-- END LOGIN FORM -->
         <!-- BEGIN FORGOT PASSWORD FORM -->
-          <?php echo form_open("Dashboard/Request" , 
+          <?= form_open("Dashboard/Request" ,
                 [ 
                     "method"        => "post" , 
                     "id"            => "login_form_forget" , 
@@ -71,7 +73,8 @@
                     "dir"       => "system" , 
                     "model"     => "admin_core" , 
                     "function"  => "get_login" , 
-                    "lang"      => $lang]); ?>
+                    "lang"      => $lang]);
+          ?>
             <h3 class="font-green"><?php echo core_lang([ "login", "forget"]); ?></h3>
             <p> <?php echo core_lang([ "login", "forgot"]); ?></p>
             <div class="form-group">
@@ -80,7 +83,7 @@
                 <button type="button" id="back-btn" class="btn btn-default"><?php echo core_lang([ "login", "inputs" , "back"]); ?></button>
                 <button type="submit" class="btn btn-success uppercase pull-right"><?php echo core_lang([ "login", "inputs" , "submit"]); ?></button>
             </div>
-        <?php echo form_close(); ?>
+        <?= form_close(); ?>
 
     </div>
     <div class="copyright"><?php echo date("Y"); ?> © <?php echo $copyright; ?></div>

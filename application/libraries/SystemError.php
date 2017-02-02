@@ -21,7 +21,7 @@
  */
 
 
-class SystemError  {
+class Systemerror  {
     
     private $error_types = [
         "internal"      => 0,

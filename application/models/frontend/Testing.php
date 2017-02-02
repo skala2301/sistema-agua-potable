@@ -6,8 +6,12 @@
  * Date: 10-03-16
  * Time: 09:56 PM
  */
+
+
 class Testing extends CI_Model
 {
+
+    protected $dir_             = __DIR__;
 
     public function __construct()
     {
@@ -16,7 +20,7 @@ class Testing extends CI_Model
 
     public function k ()
     {
-        echo "hola mundo";
+        "hola muindo desde aca";
     }
 
 }

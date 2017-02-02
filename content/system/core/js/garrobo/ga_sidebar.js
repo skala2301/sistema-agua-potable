@@ -255,8 +255,6 @@ var MenuBar = React.createClass({
         $.ajax({
 
             url: that.props.url + that.props.controller,
-            beforeSend: function () {
-            },
             statusCode: {
                 404: function () {
                     console.log("Error 404 al momento de llamar al sidebar");

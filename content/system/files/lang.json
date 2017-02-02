@@ -119,12 +119,10 @@
             "Success"       : "Success !!"
         }
       }
-      
-   
+
     },
     "es": {
-        
-        "login": {
+      "login": {
            
            "enter" : "Usuario y Contraseña",
            "password" : "Ha olvidado su contraseña?",
@@ -149,16 +147,99 @@
                "password": "Tu contraseña es erronea"
            }
        },
-        "system" :
-               {
-                   "core" : 
-                   {
-                       "request" : 
-                       {
-                           "error_message" : "Peticion Fallida"
-                       }
-                   }
-               }
+      "log" : {
+        "session" :
+        {
+          "start" : "Session start",
+          "end"   : "End session"
+        },
+        "profile":
+        {
+          "avatar" : "Avatar has been change in "
+        }
+      },
+      "system" : {
+        "core" :
+        {
+          "request" :
+          {
+            "error_database"             : "The database is no connected",
+            "error_message"              : "Token fail",
+            "error_denied"               : "Access Denied or not exist function",
+            "error_message_function"     : "No function to execute",
+            "error_message_model_asign"  : "Not exist this model in asign location",
+            "error_image_upload"         : "Sorry this not a correct image to upload",
+            "error_image_upload_title"   : "No image to upload",
+            "error_message_model"        : "No call to action , please verify.",
+            "error_password_empty"       : "Password current empty",
+            "error_password_equals"      : "The old password is incorrect",
+            "error_password_used"        : "for security reasons this password can not be placed because it has already used , [%denied%] denied",
+            "success_password_change"    : "The password has been change !! [awesome]",
+            "error_advance"              : " Sorry , we were unable to save data",
+            "error_create_file"          : "Sorry don't have permission to create a file ",
+            "success_advance"            : "The Request has been success"
+          }
+        },
+        "email" : {
+          "protocol" : "Protocol",
+          "host"     : "Host ",
+          "port"     : "Port",
+          "timeout"  : "Timeout",
+          "user"     : "User",
+          "password" : "Password",
+          "save"     : "Save All"
+
+        }
+      },
+      "profile" : {
+        "tabs" : {
+          "t1" : "Información personal",
+          "t2" : "Cambiar Avatar",
+          "t3" : "Cambiar Contraseña",
+          "t4" : "Bitacora (LOG)",
+          "t5" : "Conf. Avanzada"
+        },
+        "about" : {
+          "about"         : "Acerca de  ",
+          "account"       : "Cuenta de perfil"
+        },
+        "personal" :{
+          "name"          : "Nombres",
+          "last_name"     : "Apellidos",
+          "user"          : "Usuario",
+          "occupation"    : "Ocupacion",
+          "location"      : "Locacion",
+          "website"       : "Sitio Web",
+          "save"          : "Guardar Cambios",
+          "cancel"        : "Cancelar",
+          "saving"        : "Guardar",
+          "language"      : "Lenguaje",
+          "no_img"        : "no+hay+imagen+:(",
+          "attach"        : "Sistema de imagen solo soporta Google , Firefox , Opera. todos relamente menos IE ",
+          "note"          : "NOTA! "
+        },
+        "image"             :{
+          "select"        : "Seleccionar Imagen",
+          "remove"        : "Remover",
+          "change"        : "Cambiar",
+          "cancel"        : "Cancelar",
+          "save"          : "Guardar"
+        },
+        "password"          :{
+          "current"       : "Contraseña Actual",
+          "new"           : "Nueva Contraseña",
+          "re-type"       : "Repetir Nueva contraseña",
+          "change"        : "Cambiar contraseña",
+          "cancel"        : "Cancelar",
+          "password_change": "La contraseña se ha cambiado con exito"
+        },
+        "alerts"            : {
+          "header"        : "Actualizar perfil",
+          "updated"       : "El perfil se ha actualizado con exito",
+          "warning"       : "Peligro !!",
+          "Success"       : "Exito !!"
+        }
+      }
     }
 
 }

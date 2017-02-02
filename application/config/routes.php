@@ -50,8 +50,7 @@ $route[$config['backend'] . '/(:any)']    = 'dashboard/index/$1';
  * @todo statics routes , please don´t alter this routes, keep alone.
 ***/
 
-//garrobo route install
-$route[ $config['setup_']['install'] . '/(:any)']               = 'core/Setup/$1';
+
 //garrobo route request function into a controller dashboard
 $route['u/request/(:any)/(:any)/(:any)']                        = 'Dashboard/Request/$1/$2/$3';
 //garrobo request function not parameters
@@ -60,6 +59,8 @@ $route['a/request']                                             = 'Dashboard/Req
 $route['request/(:any)/(:any)/(:any)']                          = 'Dashboard/Request/$1/$2/$3';
 //garrobo download function
 $route['u/download/(:any)/(:any)/(:any)/(:any)']                = 'Dashboard/Download/$1/$2/$3/$4';
+
+
 
 
 

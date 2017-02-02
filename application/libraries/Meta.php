@@ -2,7 +2,7 @@
 
 /**
  * @todo meta [garrobo platform]
- * @version 1.0.0
+ * @version 1.0.2
  * @author Rolando Arriaza
  * @extends QueryBuild
  * @year 2016
@@ -28,8 +28,13 @@
         AUTO_INCREMENT=1;
  *
  *  Note the MyISAM engine is because the most querys are SELECTS
- *
+
  * </code>
+ *
+ *
+ * Comentarios :
+ *
+ *          --En la version 1.0.2 modifico get_meta_value
 **/
 
 class Meta extends Querybuild
@@ -136,9 +141,10 @@ class Meta extends Querybuild
      * @author <rolignu90>
      * @since  10-06-16
      * @param $key , the key of meta
+     * @param $multiple , True  if exist more than value with same key then return array
      * @return string , meta value
      ***/
-    public function get_meta_value($key)
+    public function get_meta_value($key , $multiple = false )
     {
         $obj        = new stdClass();
         $obj->db    = $this->db_name;
@@ -149,7 +155,16 @@ class Meta extends Querybuild
             return [str_replace("[table]" , $obj->db , $obj->query ) , $obj->param ];
         });
 
-        return $this->class->db->query($q->query)->result()[0]->value ?? null;
+        if(!$multiple)
+                return $this->class->db->query($q->query)->result()[0]->value ?? null;
+
+        $Amap = [];
+        foreach($this->class->db->query($q->query)->result() as $data)
+        {
+            $Amap[] = $data->value;
+        }
+
+        return $Amap;
     }
 
 

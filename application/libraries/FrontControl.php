@@ -27,7 +27,7 @@ class FrontControl extends SystemError
 
     protected $dir_             = './application/models/';
 
-    protected $config_file      = 'static/static_main.json'; //default
+    protected $config_file      = 'static/static_[model].json'; //default
 
     protected $active           = FALSE;
 
@@ -44,7 +44,27 @@ class FrontControl extends SystemError
         $this->loaders_(); //cargamos todas las liberias necesarias
     }
 
-    public function Compute($dir = null )
+
+    /**
+     * @author Rolando Arriaza
+     * @name User
+     * @access public
+     * @version 1.0.0
+     * @date 20-nov-2016
+     * @see http://
+     * @todo Compute se encarga de verificar la interfaz del front end
+     *
+     *      Ultimas modificaciones :
+
+     * ---------------------------------------------------------------------------
+     *                           ULTIMAS MODIFICACIONES
+     *
+     *  Nombre                         Fecha              Comentario
+     *
+     *
+     */
+
+    public function Compute( $model_name ,   $dir = null )
     {
         //verifica si un directorio no es nulo
         if(!is_null($dir))
@@ -56,12 +76,23 @@ class FrontControl extends SystemError
         //verificamos si existe el documento de configuracion front-end
         //si existe devolvera un object de ese , si no devolvera un false
 
-        $this->json_config = $this->instance->fileinfo->JsonFileDecode($this->config_file , $this->dir_);
+        if(gettype($model_name) == 'object')
+        {
+            $model_name = (string) get_class($model_name);
+        }
+
+
+        $this->json_config = $this->instance
+                                    ->fileinfo
+                                    ->JsonFileDecode(
+                                        str_replace("[model]" , $model_name , $this->config_file) ,
+                                        $this->dir_
+                                    );
 
         //verificamos la condicion
         if(is_bool($this->json_config)) {
-            $this->active = FALSE; // bandera en el index data
-            return false; // para que seguir cargando si la interfaz del front no existe
+            $this->active = FALSE;      // bandera en el index data
+            return false;               // para que seguir cargando si la interfaz del front no existe
         }
         else{
             $this->active = TRUE;
@@ -72,6 +103,8 @@ class FrontControl extends SystemError
 
         return $this;
     }
+
+    public function JsonConfig() : string { return json_encode($this->json_config); }
 
 
     public function Active_()

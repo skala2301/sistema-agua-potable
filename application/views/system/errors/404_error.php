@@ -13,25 +13,45 @@
 <link href="<?php echo site_url();?>content/assets/global/css/components.css" rel="stylesheet" id="ToLWp6kA" type="text/css"/>
 <link href="<?php echo site_url();?>content/assets/layouts/layout/css/layout.css" rel="stylesheet" id="az0Dgie4" type="text/css"/>
 
-
-
+<?php $instance = &get_instance(); ?>
+<?php $instance->load->helper("form"); ?>
+<?php $request = $request ?? null ; ?>
 <div style="padding-top:10%" class="row">
     <div class="col-md-12 page-404">
         <div class="number font-red"> 404 </div>
         <div class="details">
             <h3>Oops! Estas perdido </h3>
-            <p> No pudimos encontrar lo que buscas :(
+            <p> <?php if(isset($message)): ?>
+                        <?= $message; ?>
+                    <?php else: ?>
+                        No pudimos encontrar lo que buscas :(
+                <?php endif; ?>
                 <br/>
-            <form action="#">
+                <?= form_open("Dashboard/Request" ,
+                    [
+                        "method"        => "post" ,
+                        "id"            => "looking_form"
+                    ] ,
+                    [
+                        "dir"       => "system" ,
+                        "model"     => "system_core" ,
+                        "function"  => "get_looking" ,
+                        "lang"      => $lang ?? "es",
+                        "token"     => "asd09903453334556336546562264",
+                        "request"   => $request ?? null
+                    ]);
+                ?>
+            <?php if(is_null($request) || $request == 'front'): ?>
                 <div class="input-group input-medium">
-                    <input type="text" class="form-control" placeholder="palabra clave">
+                    <input name="look" type="text" class="form-control" placeholder="palabra clave">
                             <span class="input-group-btn">
-                                <button type="button" class="btn red">
+                                <button type="submit" class="btn red">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </span>
                 </div>
-            </form>
+            <?php endif; ?>
+            <?= form_close(); ?>
         </div>
     </div>
 </div>

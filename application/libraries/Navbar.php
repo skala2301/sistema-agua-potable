@@ -85,7 +85,8 @@ class NavBar {
         "nav_privs"             => "SELECT * FROM [table] WHERE privs LIKE '%#1%'",
         "nav_find"              => "SELECT * FROM [table] WHERE privs IN (#1,0)",
         "nav_find_exp"          => "SELECT * FROM [table] WHERE [condition]",
-        "routes"                => "SELECT [table].location FROM [table] WHERE route LIKE ? "
+        "routes"                => "SELECT [table].location FROM [table] WHERE route LIKE ? ",
+        "operator"              => "SELECT operator FROM [table] WHERE id LIKE ?"
     ];
 
     public function __construct() {
@@ -96,7 +97,7 @@ class NavBar {
         $this->table                        = $this->instance->db->dbprefix("nav");
 
         $this->instance->load
-            ->library("querybuild");
+                            ->library("querybuild");
 
         $this->instance->load->helper("tools");
 
@@ -110,6 +111,30 @@ class NavBar {
         unset($this->navbar);
     }
 
+    public function edit_nav_byId($id , $data )
+    {
+        $this->instance->db->where('id', $id);
+        return  $this->instance->db->update($this->table , $data );
+    }
+
+    public function update_operator($id , $operator)
+    {
+        $this->instance->db->where('id', $id);
+        $result = $this->instance->db->update($this->table , ["operator" => $operator] );
+        return $result == true  ?  $this->instance->db->affected_rows() : 0;
+    }
+
+    public function get_operator($id)
+    {
+        $query = str_replace("[table]" , $this->table , $this->querys['operator']);
+        return $this->instance->db->query($query , [$id])->result()[0]->operator ?? NULL ;
+    }
+
+    public function delete_nav_byId($id)
+    {
+        $result = $this->instance->db->delete($this->table , [ "id" => $id ]);
+        return $result == true  ?  $this->instance->db->affected_rows() : 0;
+    }
 
     public function get_NavLocation($route)
     {
@@ -121,7 +146,6 @@ class NavBar {
 
         return $result;
     }
-
 
     /**
      * @version 2.1.0
@@ -205,15 +229,18 @@ class NavBar {
                 $cond .= " LIKE '%0%'";
             }
 
+
+            $cond.= " ORDER BY [table].`type` ASC ";
+            $cond = str_replace("[table]" , $objects->table , $cond);
+
             $query = str_replace("[condition]" , $cond , $query );
+
 
 
 
         }else{
             //comming soon
         }
-
-        $this->last_query = $query;
 
 
         $this->pointer = $this->instance
@@ -235,6 +262,7 @@ class NavBar {
         
 
         $filter =  $this->filter($this->pointer);
+
 
         switch ($this->config->json)
         {
@@ -333,14 +361,15 @@ class NavBar {
             $returns = [];
         }
 
+
         if($objects[$counter]->active == 1) {
 
 
             $data_objects = json_decode($objects[$counter]->objects);
 
-
             switch ($objects[$counter]->type) {
                 case NAMESPACES:
+
                     if (!array_key_exists($objects[$counter]->id, $returns)) {
                         $returns[$objects[$counter]->id] = new stdClass();
 
@@ -452,10 +481,12 @@ class NavBar {
                     break;
                 case SECTION:
                     $parent = $objects[$counter]->parent;
+
+
                     foreach ($returns as $key => $value) {
 
-
                         if (($key <=> $parent) == 0) {
+
                             $value->section[$objects[$counter]->id] = new stdClass();
                             $value->section[$objects[$counter]->id]->type           = $objects[$counter]->type;
 
@@ -472,10 +503,13 @@ class NavBar {
                             $value->section[$objects[$counter]->id]->origin         = $objects[$counter]->origins;
                             $value->section[$objects[$counter]->id]->objects        = $data_objects;
                             $value->section[$objects[$counter]->id]->sidebar        = [];
+                            $value->section[$objects[$counter]->id]->section        = [];
                             break;
                         }
                         else if(array_key_exists($parent , $value->section ))
                         {
+
+
                             $value->section[$parent]->section[$objects[$counter]->id]                 = new stdClass();
                             $value->section[$parent]->section[$objects[$counter]->id]->type           = $objects[$counter]->type;
 
@@ -491,12 +525,10 @@ class NavBar {
                             $value->section[$parent]->section[$objects[$counter]->id]->active         = $objects[$counter]->active;
                             $value->section[$parent]->section[$objects[$counter]->id]->origin         = $objects[$counter]->origins;
                             $value->section[$parent]->section[$objects[$counter]->id]->objects        = $data_objects;
+                            $value->section[$parent]->section[$objects[$counter]->id]->sidebar        = [];
                         }
 
                     }
-                    break;
-                case NAVIGATION:
-                    //MUY PRONTO FORMATO NAVEGACION HORIZONTAL
                     break;
             }
         }

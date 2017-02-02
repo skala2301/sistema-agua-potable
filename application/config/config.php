@@ -3,7 +3,8 @@
 
 
 defined('BASEPATH') OR exit('No direct script access allowed');
-$config['garrobo_version'] = "1.2.5";
+
+$config['garrobo_version'] = "1.2.6";
 
 
 /**
@@ -80,12 +81,10 @@ $config['reflesh']              =  $data_config->reflesh ?? 1000;
 $config['request_limit']        = $data_config->request_limit ?? 100;
 
 /**
- * SPANISH : el garrobo configuracion basica del sistema
+ * el garrobo:  configuracion basica del sistema
  * en dado caso quieren dejarlo asi no hay problema 
  * solo se configura directorios y archivos que se necesitan 
  *
- * ENGLISH: the garrobo basic configuration of system
- * in this case required leave its .
  * **/
 
 $config['backend']              = $data_config->backend ?? "0";
@@ -140,6 +139,16 @@ $config['view_errors'] = array(
     "database"      => "",
     "denied"        => "system/errors/access_denied"
     
+);
+
+
+
+$config["base_directories"] = array(
+    "front"                 => array(
+        "base_path"     => "application",
+        "location"      => "model",
+        "name"          => "frontend"
+    )
 );
 
 
@@ -227,8 +236,8 @@ $config['session_lang'] = "lang";
 **/
 $config['tokens']       = [
     
-    "get_login"         => "453gtGJRTOP5600@#FGjkcvbsssaq2"
-    
+    "get_login"         => "453gtGJRTOP5600@#FGjkcvbsssaq2",
+    'get_looking'       => "asd09903453334556336546562264"
 ];
 
 

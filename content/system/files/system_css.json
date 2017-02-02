@@ -49,6 +49,13 @@
                 "name": "select2-bootstrap.min.css",
                 "location": "content/system/core/css/global/select2/",
                 "server": ""
-            }
+            },
+    "toast" :
+    {
+        "version": "1.0.0",
+        "name": "toastr.min.css",
+        "location": "content/assets/global/plugins/bootstrap-toastr/",
+        "server": ""
+    }
 }
 

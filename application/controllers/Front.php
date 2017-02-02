@@ -4,7 +4,7 @@ class Front extends CI_Controller {
 
     protected $model_path       = "models";
     
-    protected $error_404        =  "errors/html/404";
+    protected $error_404        =  "system/errors/404_error";
         
     protected  $routes_dir      =  ""  ;
 
@@ -122,19 +122,18 @@ class Front extends CI_Controller {
 
 
 
-        $model = NULL;
-        $error = TRUE;
 
-        $params = NULL;
+        $model              = NULL;
+        $error              = TRUE;
+        $params             = NULL;
+       // $action_name        = '';
 
-        
-        
+
         $routes = NULL;
         if(file_exists($this->routes_dir))
         {
             $routes = json_decode(file_get_contents($this->routes_dir));
         }
-
 
 
         if(sizeof($routes) != 0)
@@ -164,8 +163,9 @@ class Front extends CI_Controller {
         }
 
 
-        
-        
+        $action_name = $call;
+
+
         /**
          * verificamos si call es un frontmain 
          * dado caso sea un frontmain o frente por defecto 
@@ -251,10 +251,7 @@ class Front extends CI_Controller {
         }
 
         if ($error) {
-            
-            $this->load->helper("url");
-            $this->load->view($this->error_404, [ "route" => base_url()]);
-            
+            $this->Error_View($action_name);
         } else {
             
             $this->load->model($model, "container");
@@ -265,17 +262,37 @@ class Front extends CI_Controller {
             }
             else
             {
-                $this->load->helper("url");
-                $this->load->view($this->error_404, [ "route" => base_url()]);
+                $this->Error_View($action_name);
             }
         }
     }
 
 
-
-    public function index_routing($route, $param1 = null , $param2 = null , $param3=null   )
+    public function Error_View ($name)
     {
-        $this->index($route , array($param1 , $param2 , $param3));
+        $this->load->view(
+            $this->error_404,
+            [
+                "message"   => "La Pagina <b>$name</b> No esta disponible o se ha elimiando",
+                "enabled"   => false,
+                "request"   => "front"
+            ]
+        );
+    }
+
+
+
+    /**
+     * @Author Rolando Arriaza
+     * @version 1.0
+     * @date  28-08-16
+     * @param  string $route la ruta a generar
+     * @param  parametros a inicializar
+     **/
+
+    public function index_routing($route, ... $params  )
+    {
+        $this->index($route , $params);
     }
 
 
@@ -290,12 +307,6 @@ class Front extends CI_Controller {
     **/
     public function action ($dir , $model , $function)
     {
-
-
-
-        /**
-         *
-        ***/
 
 
         /**
@@ -425,5 +436,7 @@ class Front extends CI_Controller {
         
 
     }
+
+
 
 }

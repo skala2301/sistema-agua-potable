@@ -261,7 +261,7 @@ if(!function_exists("backend_session_lang"))
         $intance        = &get_instance();
         $intance->load->library("session");
         $session_name = $intance->config->item("session_lang");
-        return $intance->session->$session_name ?? NULL;
+        return $intance->session->$session_name ?? 'es';
     }
 }
 

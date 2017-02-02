@@ -2,12 +2,12 @@
 
 /**
  *@author: Rolando Arriaza
- *@version: 1.2.3
+ *@version: 1.2.6
  *@type: system
  *@name: Controlador de dashboard
  *@description : el controlador mas importante del sistema MVA
  *@id : system
- *@Last update : 10-10-2016
+ *@Last update : 19-01-2016
  *@Garrobo system ...
  *
  * ------------------------------------------------------------------------
@@ -83,8 +83,14 @@
  *      -- se programara el modulo de smtp email [on version 1.2.6]
  *      -- reparacion del bug cerrar sesion de forma forzada [0-->100]
  *      -- reparacion del bug en sidebar privilegios session->admin a otra session [0-->100]
- * 1.2.6[beta]
- *      -- se programara el modulo de smtp email
+ *      -- reparacion del bug en variable de session lang (reflescar si todavia no ha caducado)
+ *
+ * 1.2.6
+ *
+ *      -- se generalizo el model de error o ga_error
+ *      -- se elimino codigo deprecado en versiones anteriores
+ *      -- se eliminaron variables si usar
+ *
  *
  */
 
@@ -135,6 +141,7 @@ class Dashboard extends CI_Controller {
         try {
 
             parent::__construct();
+
         } catch (Exception $ex) {
 
 
@@ -142,8 +149,17 @@ class Dashboard extends CI_Controller {
                 . $ex->getMessage() . " [Line:]"
                 . $ex->getLine());
 
+            $this->ga_error->create_error(
+                            $ex->getMessage() ,
+                            "Error critico en el sistema de carga",
+                            "system",
+                            "Dashboard.php / __construct"
+            );
+
             $this->error_404();
         }
+
+
 
         /**
          * contructor del MVA (modelo vista adaptador)
@@ -167,7 +183,6 @@ class Dashboard extends CI_Controller {
         $this->load->library("Base_url"); // libreria de url ver libreria
         $this->load->library("System"); //libreria del sistema en general
         $this->load->library("Tools"); //libreria de herramientas
-        $this->load->library('install'); //libraria de instalacion
         $this->load->library("Routes"); // libreria de rutas del sistema
 
         //URL BASE , SUSTITUIDA POR base_url();
@@ -224,7 +239,25 @@ class Dashboard extends CI_Controller {
          *            this return say to system is not override
         **/
 
-        if(!$this->app_setup) return false ;
+        if(!$this->app_setup) {
+
+
+            $this->ga_error->create_error(
+                "la configuracion app_setup no se encuentra disponible"
+                . "Servidor : "
+                . $_SERVER['SERVER_NAME']
+                . ", Documento raiz : "
+                . $_SERVER['DOCUMENT_ROOT']
+                . ", IP usuario : "
+                . $_SERVER['REMOTE_ADDR']
+                ,
+                "Error, No se encuentra la variable de (app_setup)",
+                "system",
+                "Dashboard.php / __construct"
+            );
+
+            return false;
+        }
 
 
         /**
@@ -247,16 +280,15 @@ class Dashboard extends CI_Controller {
          * * */
 
 
-        $lang_cookie    = "";
-
         if(isset($_REQUEST['lang'])){
 
             backend_session_lang_set($_REQUEST['lang']);
-
             if(is_null(get_cookie("lang"))) $_COOKIE['lang'] = $_REQUEST['lang'];
         }
-        else if(is_null(backend_session_lang()))
+        else if(is_null(backend_session_lang())
+            || backend_session_lang() !=  $this->user->get()->user_lang())
         {
+
             $user_lang   = $this->user->get()->user_lang();
 
             if(is_null($user_lang))
@@ -266,62 +298,7 @@ class Dashboard extends CI_Controller {
 
         }
 
-
         $this->lang = backend_session_lang();
-
-        
-
-        /**
-         * @version 1.0
-         * @since 1.1.1
-         * @todo add new interfaz app setup data
-         * * */
-        $app = $this->app_setup;
-
-
-
-        /***
-         * algoritmo de instalacion no ha sido terminado
-         * por ende esta comentado su interfaz de inicio
-         *
-         * se ha comentado el algoritmo de instalacion la fecha de 11-09-16
-         *
-        ****/
-
-        //installed app ?
-       // $installed = $app->install == 0 ? $this->install->install() : $this->install->install(TRUE);
-
-
-        /*$install              = $this->config->item("setup_")['install'];
-        if (is_bool($installed)) {
-            if (!$installed) {
-                redirect( $install ."/install=clean");
-                return;
-            }
-        } else {
-            redirect($install ."/install=");
-            return;
-        }*/
-
-
-        /**FIn del algoritmo de interfaz de instalacion**/
-
-        
-        
-        /**
-         * ACA SE AGREGARAN LAS RUTAS DEL SISTEMA
-         * COMO ES UNA CLASE RECURSIVA PUEDE AGREGAR LOS
-         * "Set que sean necesarios" , SIEMPRE Y CUANDO
-         * SEA UNA MVA ROUTE
-         * */
-
-        /**
-         * deprecate routes in load instance
-        */
-
-       /* $this->routes
-                ->Set("system=admin_core", $this->backend)
-                ->Set("system=admin_core" , "0");*/
 
 
 
@@ -362,6 +339,8 @@ class Dashboard extends CI_Controller {
      *
      *
      * * */
+
+
     public function index($model = NULL) {
 
 
@@ -391,14 +370,16 @@ class Dashboard extends CI_Controller {
         ***/
 
 
-        $temp_token     = $this->input->get("token"); //security token on legued
+        $temp_token     = $this->input->get("token"); //security token
         $user_name      = $this->input->get("u"); // security username
         $token_active   = $this->user->compare_temp_token($temp_token);
+
 
         $redirect       = false;
 
         if($token_active >= 1)
         {
+
             $this->load->model("system/admin_core");
             $class                  = $this->admin_core->get_admin_class($user_name) ;
             $sess                   = $this->config->item('session_name');
@@ -408,15 +389,19 @@ class Dashboard extends CI_Controller {
                 $redirect = true;
             }
 
-
         }
 
-        unset($_GET['token']);
-        unset($_GET['u']);
+        unset($_GET['token'], $_GET['u']);
+
 
         $buid_query     = $_GET;
 
         $this->user->destroy_temp_token($temp_token);
+
+        /**
+         * Fin del algoritmo Session token
+        **/
+
         
         /**Nuevas variables de carga de sesion**/
         
@@ -902,7 +887,7 @@ class Dashboard extends CI_Controller {
      * */
     public function error_404($server = "server") {
          if($server == "server")
-            $this->garrobo->Error404($server);
+                $this->garrobo->Error404($server);
         else
             return $this->garrobo->Error404($server);
     }
@@ -1081,97 +1066,14 @@ class Dashboard extends CI_Controller {
      * * */
     public function test() {
 
-        //$this->load->library("meta");
-        //print_r($this->meta->get_meta_value('user_lang'));
+       //$this->load->model("system_core");
+      //  echo $this->system_core->get_langs();
 
-       // $p = file_get_contents($this->config->item("data_config_path"));
+        //https://www.pagadito.com/auxcall/gen.php?ahac=suscriptores&email=rolo@gmail.com
 
-       // print_r(file_put_contents($this->config->item("data_config_path"),$p ));
+       // $this->load->library("curl");
 
-        //print_r($this->user->get_user_type());
-       // $this->load->library("usertype");
-        //  $this->usertype->_get();
-
-       // print $this->usertype->_get()->get_prop('-A');
-
-       // print_r($this->usertype->Show($this->session->user_meta->user_type));
-
-        //$this->systemerror->SetError();
-
-        //$this->user->get();
-         //print_r($this->user->get_user_type());
-
-      // print_r($this->session->user_meta);
-
-       // $this->load->library("frontcontrol");
-       // $this->frontcontrol
-
-        // $this->load->database();
-
-        //("memory_limit","512M");
-        // $this->db->query('call sp_dump_data(?,?,?)' , [ 'sdsd' , 1 , 'C' ]);
-        //  $this->db->query('call sp_dump_data(?,?,?)' , [ 'sffdddJHJsd' , 1 , 'C' ]);
-        // print_r($k);
-
-       // $this->user->destroy_temp_token('aa');
-
-       // $this->load->library("operator");
-        //print_r($this->operator->op_actions()->del);
-
-        /*
-
-        id_operator             =>  STRING  MD5()
-             *                  affected_table          =>  STRING
-             *                  id_company              =>  STRING
-             *                  id_operator_type        => INT
-             *
-             *
-             *
-             *                  affected_rows           => INT
-             *                  query                   => STRING
-             *                  id_user_affected        => INT  (one number)
-             *                  users_affected          => STRING separated by comma (,)
-             *
-             *                  date                    => STRING
-             *                  hour                    => STRING
-             *                  action                  => STRING
-             *
-             *                  rollback                => BOOL default FALSE
-             *                  approved                => BOOL default TRUE
-             *                  id_user_approved        => INT default 0 => system
-             *                  active                  => BOOL default FALSE
-             *
-             *                  sp_name                 => STRING,
-             *                  sp_params               => ARRAY
-
-        */
-
-        //get_operator_md5()
-      /*  $k =  $this->operator->create_operator([
-             "id_operator"              => '',
-             "id_company"               => '',
-             "id_operator_type"         => '',
-             "affected_table"           => '',
-             "affected_rows"            => '',
-             "query"                    => '',
-             "id_user_affected"         => '',
-             "date"                     => '',
-             "hour"                     => '',
-             "action"                   => '',
-             "rollback"                 => false,
-             "approved"                 => true ,
-             "id_user_approved"         => 0,
-             "active"                   => false,
-             "sp_name"                  => '',
-             "sp_params"                => []
-        ] );
-
-        print_r($k);*/
-        
-        
-       // $this->load->library("privileges" , null ,"privs");
-        //print_r($this->privs->get_all_rols());
-        print_r( print_javascript("select2", "url"));
+        echo phpinfo();
     }
 
     /**
@@ -1215,7 +1117,7 @@ class Dashboard extends CI_Controller {
          * variable de lenguaje ...
          * * */
 
-        $lang           = isset($_GET['lang']) ? $_GET['lang'] : isset($_POST['lang']) ? $_POST['lang'] : $this->lang;
+       // $lang           = isset($_GET['lang']) ? $_GET['lang'] : isset($_POST['lang']) ? $_POST['lang'] : $this->lang;
         $token          = isset($_REQUEST['token']) ?? NULL;
 
 

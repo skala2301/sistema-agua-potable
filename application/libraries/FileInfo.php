@@ -86,12 +86,16 @@ class FileInfo {
      * @todo Retorna la lista de archivos en formato array stdclass
      * 
      * * */
-    public function GetFiles() {
+    public function GetFiles($filter = array()) {
+
         if (file_exists($this->dir)) {
-            $file = new SplFileInfo($this->dir);
+                 $file = new SplFileInfo($this->dir);
             if ($file->isDir()) {
-                $this->recursive_file($this->dir);
+
+                $this->recursive_file($this->dir , $filter);
             } else {
+
+
                 $class = new stdClass();
                 $class->name = $file->getFilename();
                 $class->lower_name = strtolower($file->getFilename());
@@ -102,7 +106,22 @@ class FileInfo {
                 $class->last_update = $file->getCTime();
 
 
-                $this->recursive_file[] = $class;
+                $accept = true;
+                if(count($filter) >= 1)
+                {
+                    foreach ($filter as $fill)
+                    {
+
+                        if( ($fill <=> $class->extension) == 0 )
+                        {
+                            $accept = false;
+                            break;
+                        }
+                    }
+                }
+
+                if($accept)
+                        $this->recursive_file[] = $class;
             }
         }
 
@@ -141,14 +160,14 @@ class FileInfo {
      * @param string $d locacion de directorio o archivo   
      * @return function() / null devuelve una funcion recursiva o no devuelve nada
      * * */
-    private function recursive_file($d) {
+    private function recursive_file($d , $filter = array()) {
         if (file_exists($d)) {
             $file = new SplFileInfo($d);
             if ($file->isDir()) {
                 $directory = new DirectoryIterator($d);
                 while ($directory->valid()) {
                     if (!$directory->isDot()) {
-                        $this->recursive_file($directory->getFileInfo());
+                        $this->recursive_file($directory->getFileInfo() , $filter);
                     }
                     $directory->next();
                 }
@@ -163,7 +182,26 @@ class FileInfo {
                 $class->path = $file->getPath();
                 $class->last_update = $file->getCTime();
 
-                $this->recursive_file[] = $class;
+
+                $accept = false ;
+                if(count($filter) >= 1)
+                {
+
+                    foreach ($filter as $fill)
+                    {
+                        if( ($fill <=> $class->extension) == 0 )
+                        {
+                            $accept = true;
+                            break;
+                        }
+                    }
+                }
+                else{
+                    $accept = true;
+                }
+
+                if($accept)
+                    $this->recursive_file[] = $class;
             }
         }
     }

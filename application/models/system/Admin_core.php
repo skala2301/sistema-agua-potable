@@ -82,6 +82,7 @@ class Admin_core extends CI_Model implements CoreInterface {
          * EXISTE UNA LIBRERIA LOGIN EN LA CUAL CARGA PARAMETROS ESPECIFICOS 
          * **/
         $this->load->library("login");
+        $this->load->helper("form");
         
         
         $themes                     = $this->login->get_activate_theme();

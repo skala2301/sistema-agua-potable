@@ -1,0 +1,20 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2017-01-29 20:56:57 --> Query error: Table 'mytrip.ga_error_handle' doesn't exist - Invalid query: SELECT count(*) as 'count' FROM ga_error_handle WHERE ga_error_handle.value = '{\"readyState\":0,\"responseText\":\"\",\"status\":0,\"statusText\":\"error\"}' 
+ERROR - 2017-01-29 20:56:57 --> Severity: error --> Exception: Call to a member function load() on string /Applications/MAMP/htdocs/mytrip/system/database/DB_driver.php 1743
+ERROR - 2017-01-29 20:56:57 --> Query error: Table 'mytrip.ga_error_handle' doesn't exist - Invalid query: SELECT count(*) as 'count' FROM ga_error_handle WHERE ga_error_handle.value = '{\"readyState\":0,\"responseText\":\"\",\"status\":0,\"statusText\":\"error\"}' 
+ERROR - 2017-01-29 20:56:57 --> Severity: error --> Exception: Call to a member function load() on string /Applications/MAMP/htdocs/mytrip/system/database/DB_driver.php 1743
+ERROR - 2017-01-29 20:56:57 --> Query error: Table 'mytrip.ga_error_handle' doesn't exist - Invalid query: SELECT count(*) as 'count' FROM ga_error_handle WHERE ga_error_handle.value = '{\"readyState\":0,\"responseText\":\"\",\"status\":0,\"statusText\":\"error\"}' 
+ERROR - 2017-01-29 20:56:57 --> Severity: error --> Exception: Call to a member function load() on string /Applications/MAMP/htdocs/mytrip/system/database/DB_driver.php 1743
+ERROR - 2017-01-29 20:56:57 --> Query error: Table 'mytrip.ga_error_handle' doesn't exist - Invalid query: SELECT count(*) as 'count' FROM ga_error_handle WHERE ga_error_handle.value = '{\"readyState\":0,\"responseText\":\"\",\"status\":0,\"statusText\":\"error\"}' 
+ERROR - 2017-01-29 20:56:57 --> Severity: error --> Exception: Call to a member function load() on string /Applications/MAMP/htdocs/mytrip/system/database/DB_driver.php 1743
+ERROR - 2017-01-29 20:56:57 --> Query error: Table 'mytrip.ga_error_handle' doesn't exist - Invalid query: SELECT count(*) as 'count' FROM ga_error_handle WHERE ga_error_handle.value = '{\"readyState\":0,\"responseText\":\"\",\"status\":0,\"statusText\":\"error\"}' 
+ERROR - 2017-01-29 20:56:57 --> Severity: error --> Exception: Call to a member function load() on string /Applications/MAMP/htdocs/mytrip/system/database/DB_driver.php 1743
+ERROR - 2017-01-29 20:56:57 --> Query error: Table 'mytrip.ga_error_handle' doesn't exist - Invalid query: SELECT count(*) as 'count' FROM ga_error_handle WHERE ga_error_handle.value = '{\"readyState\":0,\"responseText\":\"\",\"status\":0,\"statusText\":\"error\"}' 
+ERROR - 2017-01-29 20:56:57 --> Severity: error --> Exception: Call to a member function load() on string /Applications/MAMP/htdocs/mytrip/system/database/DB_driver.php 1743
+ERROR - 2017-01-29 20:56:57 --> Query error: Table 'mytrip.ga_error_handle' doesn't exist - Invalid query: SELECT count(*) as 'count' FROM ga_error_handle WHERE ga_error_handle.value = '{\"readyState\":0,\"responseText\":\"\",\"status\":0,\"statusText\":\"error\"}' 
+ERROR - 2017-01-29 20:56:57 --> Severity: error --> Exception: Call to a member function load() on string /Applications/MAMP/htdocs/mytrip/system/database/DB_driver.php 1743
+ERROR - 2017-01-29 21:11:44 --> Query error: Table 'mytrip.ga_error_handle' doesn't exist - Invalid query: SELECT count(*) as 'count' FROM ga_error_handle WHERE ga_error_handle.value = '{\"readyState\":0,\"responseText\":\"\",\"status\":0,\"statusText\":\"error\"}' 
+ERROR - 2017-01-29 21:11:44 --> Severity: error --> Exception: Call to a member function load() on string /Applications/MAMP/htdocs/mytrip/system/database/DB_driver.php 1743
+ERROR - 2017-01-29 22:23:57 --> Query error: Table 'mytrip.ga_error_handle' doesn't exist - Invalid query: SELECT count(*) as 'count' FROM ga_error_handle WHERE ga_error_handle.value = '{\"readyState\":0,\"responseText\":\"\",\"status\":0,\"statusText\":\"error\"}' 
+ERROR - 2017-01-29 22:23:57 --> Severity: error --> Exception: Call to a member function load() on string /Applications/MAMP/htdocs/mytrip/system/database/DB_driver.php 1743

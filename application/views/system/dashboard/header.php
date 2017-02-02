@@ -157,9 +157,6 @@
             System.import('<?= $s->script  ?>').then(console.log.bind(console));
         <?php endforeach; ?>
     </script>
-    
-    
-  
 
     <!-- icon or favicon -->
     <link id="ga_icon" rel="shortcut icon" href="<?php echo $favicon; ?>"/>
@@ -177,6 +174,7 @@
 <input type="hidden" id="ga_hibrid" value = "<?php echo $ga_ ?? 1; ?>"/>
 <input type="hidden" id="ga_lang" value = "<?php echo $lang ?? "es" ; ?>"/>
 <input type="hidden" id="ga_limit" value = "<?php echo $request_limit ?? 100; ?>"/>
+<input type="hidden" id="ga_current_url" value="" name="" />
 <div class="page-header navbar navbar-fixed-top">
     <!-- BEGIN HEADER INNER -->
     <div class="page-header-inner ">

@@ -102,7 +102,28 @@
                 "name": "select2.full.min.js",
                 "location": "content/system/core/js/select2/",
                 "server": ""
-            }
+            },
+
+    "toast" :  {
+      "version": "1.0.0",
+      "name": "toastr.min.js",
+      "location": "content/assets/global/plugins/bootstrap-toastr/",
+      "server": ""
+    },
+
+    "ga_toast" :  {
+        "version": "1.0.0",
+        "name": "ga_toast.js",
+        "location": "content/system/core/apps/ga_toast/",
+        "server": ""
+    },
+      "fb-immutable" :  {
+          "version": "3.8.0",
+          "name": "immutable.min.js",
+          "location": "content/system/core/js/facebook-immutable/",
+        "server": ""
+    }
+
 
 
 

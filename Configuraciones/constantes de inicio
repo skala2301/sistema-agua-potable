@@ -1,8 +1,0 @@
-$config['protocol']     =   $i->meta->get('protocol')       ?? 'smtp';
-$config['smtp_host']    =   $i->meta->get("smtp_host")      ?? 'localhost';
-$config['smtp_port']    =   $i->meta->get("smtp_port")      ?? '465';
-$config['smtp_timeout'] =   $i->meta->get("smtp_timeout")   ?? '10';
-$config['smtp_user']    =   $i->meta->get("smtp_user")      ?? 'root';
-$config['smtp_pass']    =   $i->meta->get("smtp_pass")      ?? 'localhost';
-
-LOS METADATAS DEBE DE PREINTALARSE EN LA CONFIGURACION INICIAL

@@ -34,8 +34,7 @@ class Tools {
             $this->class = &get_instance();
         }
     }
-    
-   
+
     public function __call($name, $arguments) {
         //NO CALLS 
     }
@@ -55,6 +54,7 @@ class Tools {
     }
     
     public function PrettyDate($date , $lang = "es"){
+
         $this->default_timezone();
         $d              = new DateTime($date);
         $n              = new DateTime("now");
@@ -84,7 +84,6 @@ class Tools {
         }
     }
 
-    
     public function default_timezone(){
         date_default_timezone_set($this->timezone);
     }
@@ -97,6 +96,21 @@ class Tools {
     public function current_date(){
         $d = new DateTime("now");
         return $d->format("Y-m-d");
+    }
+
+    public function get_models_files($directory = '') : array
+    {
+        $this->class->load->library("fileinfo");
+        $directory = APPPATH .  "models/" . $directory;
+        $files = $this->class->fileinfo->Start($directory)->GetFiles(["php"]);
+        return $files;
+    }
+
+
+    public function convert_starting_path($starting , $path) : string
+    {
+        $path = explode($starting , $path);
+        return $path[1] ?? $path[0];
     }
    
 }

@@ -38,8 +38,11 @@ var ga_id_script            = null;
 var ga_  = (location, element = null , counter = 0)=>
 {
 
-
     try{
+
+        try{
+            $("#ga_current_url").attr("name" , element).val(location);
+        }catch(e){ console.log(e); }
 
         if(element != null)
         {
@@ -127,7 +130,7 @@ var ga_  = (location, element = null , counter = 0)=>
  * @todo ga_request its send a simple request and return a any value ...
  * @version 1.0.5
  * @author Rolando Arriaza
- * @param object/string location [add a location][example] : [ { function: 'hello' , dir : 'system' , model : 'test' } ] or a string 'hello/system/test'
+ * @param object/string location [add a location][example] :  { function: 'hello' , dir : 'system' , model : 'test' }  or a string 'hello/system/test'
  * @param object data, data to sender if exist
  * @param object/function/string/null result ,where send a result if exist
  * @param object sender , { id : 'element' , html : 'load...' }
@@ -139,7 +142,23 @@ var ga_request = (location  , data = {} , result = function(){} ,  sender = null
 
     if(typeof location === 'object') {
 
-        url += location.function;
+
+        /**
+         * add new name 13-jan-2017
+         * **/
+        let func = null;
+        if(location.function == 'undefined' || location.function == null )
+        {
+            if(location.func !== 'undefined' || location.func !== null)
+            {
+                func = location.func;
+            }
+        }
+        else{
+            func = location.function;
+        }
+
+        url += func;
         url += "/";
         url += location.dir;
         url += "/";
@@ -180,7 +199,19 @@ var ga_request = (location  , data = {} , result = function(){} ,  sender = null
         }
 
     }).fail(function(xhr , status ){
-        console.log(xhr);
+
+        let name         = "Se encontro un error desconocido , se genero directamente de ga_request";
+        let error        = JSON.stringify(xhr);
+        let located      = "system | helper | library | interfaces | controller |";
+        let type         = "undefined";
+
+        console.log(status);
+        try {
+            ga_error_handle(name , error , located  , type );
+        }catch (e){
+            console.log("Error demasiado heavy !!");
+        }
+
     });
 
 };
@@ -403,6 +434,15 @@ var ga_core     = function()
 };
 
 
+/**
+ * @author Rolando Arriaza
+ * @version 1.4.0
+ * @todo ga_core
+ *
+ *          <ga_tools> una funcion con diversas herramientas en garrobo
+ *
+ *          Ultima modificacion : 3/12/2016 por rolignu
+ * **/
 var ga_tools = {
 
 
@@ -415,8 +455,180 @@ var ga_tools = {
 
      set_lang : function(lang){
          $("#ga_lang").val(lang);
+     },
+
+     current_url : () =>{
+          return {
+             url        : $("#ga_current_url").val(),
+             name       : $("#ga_current_url").attr("name")
+          };
+     },
+     form_validation : function(directives, pointer  , inputs  = null , debug = false  )
+     {
+
+         var error = false;
+         var target = directives.target;
+
+         if(inputs == null ) inputs = "input,select,textarea";
+
+         $(pointer).find(inputs).each(function (k,v) {
+             v = $(v);
+             try {
+
+                 if(debug)
+                 {
+                     console.log("STEP __ " + k );
+                     console.log("DOM");
+                     console.log(v);
+                     console.log("END_DOM");
+                     console.log("TARGET");
+                     console.log(target);
+                     console.log("DIRECTIVES");
+                     console.log(directives);
+                 }
+
+                 var  p = [];
+
+                 if(target === 'undefined' || target === null)
+                 {
+                     p = $.map( directives.pattern , function(k){
+                         return [k];
+                     });
+
+                 }else {
+
+                    p = $.map( directives[target].pattern , function(k){
+                         return [k];
+                    });
+
+                 }
+
+
+                 if(debug) {
+                     console.log("MEDIUM ___ STEP __ " + k );
+                     console.log("DOM");
+                     console.log(v);
+                     console.log("END_DOM");
+                     console.log("TARGET");
+                     console.log(target);
+                     console.log("DIRECTIVES");
+                     console.log(directives);
+                 }
+
+                 if(directives.merger.pattern !== 'undefined' || directives.merger.pattern !== null )
+                 {
+                     p.push.apply(p , $.map( directives.merger.pattern, function(k){
+                         return [k];
+                     }));
+                 }
+
+                 for(var pa in p)
+                 {
+                     if (p[pa] !== 'undefined' &&
+                         p[pa] === v.attr("id")
+                         || p[pa] === v.attr("name")
+                     )
+                     {
+                         if(v.val() === null || v.val() == '' || !v.val() )
+                         {
+                             if(v.is("select"))
+                             {
+                                 v.parent().find(".select2").css({"border" : "2px solid red"});
+                             }else {
+                                 v.css({"border" : "2px solid red"});
+                                 error = true ;
+                             }
+
+                         }
+                         else {
+                             if(v.is("select"))
+                             {
+                                 v.parent().find(".select2").css({"border" : "1px solid #ccc "});
+                             }
+                             else{
+                                 v.css({"border" : "1px solid #ccc "});
+                             }
+                         }
+                     }
+                 }
+
+
+                 if(debug) {
+                     console.log("END ___ STEP __ " + k );
+                     console.log("DOM");
+                     console.log(v);
+                     console.log("END_DOM");
+                     console.log("TARGET");
+                     console.log(target);
+                     console.log("DIRECTIVES");
+                     console.log(directives);
+                 }
+
+
+             }catch(e) {
+                 console.log("Error detectado");
+                 console.log(e);
+             }
+         });
+
+         return error;
      }
 };
+
+
+var ga_error_handle  = (name , error , located  , type , intent = 0)=>{
+
+        var url = $("#ga_url").val() + "Dashboard/Request/";
+
+        url += 'set_xhr_error';
+        url += "/";
+        url += 'system';
+        url += "/";
+        url += 'ga_error';
+
+        $.ajax({
+            url : url,
+            method : 'POST',
+            data: {
+                name        : name ,
+                error       : error ,
+                located     : located ,
+                type        : type
+            },
+            dataType : 'json'
+        }).done((data)=>{
+            console.log("Error Reportado con exito ...");
+            console.log(data);
+        }).fail((error)=>{
+            console.log(error);
+            console.log("Enviar el error , genero otro error ... paradoja ");
+            if(intent < parseInt(limit_request_))
+                ga_error_handle(name , error , located , type , intent++);
+        });
+
+};
+
+
+var get_system_langs = function( result )
+{
+    var url = $("#ga_url").val() + "Dashboard/Request/";
+
+    url += 'get_langs';
+    url += "/";
+    url += 'system';
+    url += "/";
+    url += 'system_core';
+
+    $.ajax({
+        url : url,
+        method : 'POST',
+        dataType : 'json'
+    }).done(result).fail((error)=>{
+        ga_error_handle("Error generado en ga_functions -> get_system_langs", error, "ga_functions" , 0);
+    });
+
+}
+
 
 
 

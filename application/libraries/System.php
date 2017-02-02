@@ -35,7 +35,10 @@ class System {
                 "content/assets/layouts/layout/css/layout.css",
                 "content/assets/layouts/layout/css/themes/darkblue.min.css",
                 "content/assets/layouts/layout/css/custom.css",
-                "content/assets/dashboard/css/ga_dashboard.css"
+                "content/assets/dashboard/css/ga_dashboard.css",
+                "toast",
+                "content/assets/global/plugins/css/components.min.css",
+                "content/assets/global/plugins/css/plugins.min.css"
              
         ], "url");
 
@@ -46,7 +49,9 @@ class System {
             "babel" ,
             "react" ,
             "reactdom" ,
-             "render_vars"
+             "render_vars",
+            "toast",
+            "ga_toast"
         ], "url" );
         
  
@@ -66,7 +71,8 @@ class System {
             "bootstrap" ,
             "remarkable",
             "ga_",
-            "boot"
+            "boot",
+            'fb-immutable'
         ], "url" );
         
 

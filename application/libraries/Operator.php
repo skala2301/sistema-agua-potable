@@ -315,7 +315,8 @@ class Operator extends User
                 IN i_log						TEXT ,
                 IN e_id_op_log				INT(11)
          */
-            print $sp;
+
+
 
             $result   = $instance->db->query($sp , [
                     $e_type,
@@ -325,7 +326,7 @@ class Operator extends User
                     $params->affected_table ?? '',
                     $params->id_company ?? '',
                     json_encode($log , JSON_HEX_TAG | JSON_HEX_QUOT),
-                    ''
+                    0
             ])->result();
 
 
@@ -334,6 +335,109 @@ class Operator extends User
 
     }
 
+
+    public function  create_insert_operator(
+        $user ,
+        $query ,
+        $operator = '' ,
+        $affected_rows = 0 ,
+        $affected_table = '' )
+    {
+
+
+        $k =  $this->create_operator([
+            "id_operator"              => $operator,
+            "id_company"               => '',
+            "id_operator_type"         => 'C',
+            "affected_table"           => $affected_table,
+            "affected_rows"            => $affected_rows,
+            "query"                    => $query ,
+            "id_user_affected"         => '',
+            "date"                     => '',
+            "hour"                     => '',
+            "action"                   => $this->operator_actions->in,
+            "rollback"                 => false,
+            "approved"                 => false  ,
+            "id_user_approved"         => 0,
+            "active"                   => false,
+            "sp_name"                  => 'NO STORED PROCEDURE ',
+            "sp_params"                => []
+        ] , $user );
+
+
+        return $k ;
+
+    }
+
+    public function create_sp_basic_operator(
+        $user ,
+        $sp_name ,
+        $operator = '',
+        $sp_params = [],
+        $affected_rows = 0 ,
+        $affected_table = 0  )
+    {
+
+
+        $k =  $this->operator->create_operator([
+            "id_operator"              => $operator,
+            "id_company"               => '',
+            "id_operator_type"         => 'C',
+            "affected_table"           => $affected_table,
+            "affected_rows"            => $affected_rows,
+            "query"                    => 'No query (SP ONLY )',
+            "id_user_affected"         => '',
+            "date"                     => '',
+            "hour"                     => '',
+            "action"                   => $this->operator_actions->sp,
+            "rollback"                 => false,
+            "approved"                 => false  ,
+            "id_user_approved"         => 0,
+            "active"                   => false,
+            "sp_name"                  => $sp_name,
+            "sp_params"                => $sp_params
+        ] , $user );
+
+
+
+        return $k;
+
+    }
+
+
+    public function create_update_basic_operator(
+        $user ,
+        $query ,
+        $operator = '',
+        $affected_rows = 0 ,
+        $affected_table = ''  )
+    {
+
+
+        $k =  $this->create_operator([
+            "id_operator"              => $operator,
+            "id_company"               => '',
+            "id_operator_type"         => 'C',
+            "affected_table"           => $affected_table,
+            "affected_rows"            => $affected_rows,
+            "query"                    => $query ,
+            "id_user_affected"         => '',
+            "date"                     => '',
+            "hour"                     => '',
+            "action"                   => $this->operator_actions->up,
+            "rollback"                 => false,
+            "approved"                 => false  ,
+            "id_user_approved"         => 0,
+            "active"                   => false,
+            "sp_name"                  => 'NO STORED PROCEDURE ',
+            "sp_params"                => []
+        ] , $user );
+
+
+
+        return $k;
+
+    }
 
 
 

@@ -3,6 +3,12 @@
   {
     "dir"     : "frontend",
     "model"   : "main",
-    "action"  : "dothat"
+    "action"  : "index"
+  },
+  "get-looking":
+  {
+    "dir"     : "frontend",
+    "model"   : "looking",
+    "action"  : "index"
   }
 }

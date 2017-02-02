@@ -92,6 +92,25 @@ $.fn.extend({
         });
 
 
+    },
+    ga_submit : function(fn = null  , $this = null  )
+    {
+
+
+        if($this == null) $this = this;
+
+        if(fn != null && typeof  fn === 'function')
+        {
+            $($this).unbind().submit(fn(event, params));
+            return true ;
+        }
+
+        $($this).unbind().submit(function(event , fn ){
+            console.log("hola mundo");
+            console.log(fn );
+            event.preventDefault();
+        });
+
     }
 
 });

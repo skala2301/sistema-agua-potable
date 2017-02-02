@@ -11,26 +11,32 @@ class Main extends CI_Model {
          parent::__construct();
 
          $this->loaders_();//cargamos toda la data necesaria
-         $this->frontcontrol->Compute($this->dir_); //computamos los datos
+         $this->frontcontrol->Compute($this  , $this->dir_); //computamos los datos
     }
     
-    public function index()
+    public function index($status_request = false )
     {
+
+
 
         if(!$this->frontcontrol->Active_())
         {
-            return $this->load->view("errors/frontend/render" , '' , FALSE);
+           // return $this->load->view("errors/frontend/render" , '' , FALSE);
         }
 
         if($this->frontcontrol->Maintent_())
         {
-            return $this->load->view("mainten/frontend/frontend" , '' , FALSE);
+           // return $this->load->view("mainten/frontend/frontend" , '' , FALSE);
         }
 
-        echo "hola mundo";
+
+      //  echo $this->frontcontrol->JsonConfig();
+
+        // return $this->load->view("test/hello" , '' , $status_request );
+
     }
     
-    public function action()
+    public function action($data = array() , $hello)
     {
  
     }
@@ -40,6 +46,10 @@ class Main extends CI_Model {
         $this->load->database();
         $this->load->library([ "frontcontrol" ]);
     }
+
+    /*public function dothat(){
+        echo "HOLA MUNDO DESDE UNA RUTA";
+    }*/
     
 
 }

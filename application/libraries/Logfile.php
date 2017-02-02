@@ -49,8 +49,6 @@ class Logfile
         $this->class->load->database();
         $this->class->load->library("user");
 
-
-
         if(isset($params['id']))
             $this->user_id = $params['id'];
         else

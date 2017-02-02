@@ -146,10 +146,9 @@ if(!function_exists("core_lang"))
     {
 
         $instance       = &get_instance();
-        //$core_file      = $instance->config->item("setup_")['core_lang'];
         $core_file      = "." . $instance->config->item("core_lang");
-        $primary_lang   = $_COOKIE['lang'] ?? backend_session_lang();
-        return meta_lang( $_COOKIE['lang'] ?? 'en' , $object , $core_file , $params  );
+        $primary_lang   = backend_session_lang() ?? get_lang();
+        return meta_lang( $primary_lang, $object , $core_file , $params  );
     }
 
 }
@@ -159,6 +158,6 @@ if(!function_exists('get_lang'))
 {
     function get_lang()
     {
-        return $_COOKIE['lang'] ?? NULL;
+        return $_COOKIE['lang'] ?? 'es';
     }
 }
