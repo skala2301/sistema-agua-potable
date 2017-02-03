@@ -1938,7 +1938,7 @@ Page Quick Sidebar
             .page-quick-sidebar-wrapper .page-quick-sidebar .nav-tabs > li .dropdown-menu > li:hover > a > i {
               color: #9babb8; }
           .page-quick-sidebar-wrapper .page-quick-sidebar .nav-tabs > li .dropdown-menu > li.active > a {
-            background: #38444f;
+            background: white ;
             color: #99a8b5; }
           .page-quick-sidebar-wrapper .page-quick-sidebar .nav-tabs > li .dropdown-menu > li.divider {
             background-color: #3d4a55; }
@@ -1966,7 +1966,7 @@ Page Quick Sidebar
         border-bottom-style: solid;
         border-bottom-color: #273037; }
         .page-quick-sidebar-wrapper .page-quick-sidebar .list-items > li:hover {
-          background: #273037; }
+          background: white; }
         .page-quick-sidebar-wrapper .page-quick-sidebar .list-items > li:last-child {
           border-bottom: 0; }
       .page-quick-sidebar-wrapper .page-quick-sidebar .list-items.borderless li {

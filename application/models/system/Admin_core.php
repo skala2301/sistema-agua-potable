@@ -26,7 +26,7 @@ class Admin_core extends CI_Model implements CoreInterface {
     
     protected $my_querys = [
         
-        "login"             =>  "SELECT count(*) as 'count' , id as 'id' FROM [table] WHERE username LIKE ? OR email LIKE ?",
+        "login"             =>  "SELECT count(*) as 'count' , id as 'id' FROM [table] WHERE username LIKE ? OR email LIKE ? GROUP BY id",
         "login_filter"      =>  "SELECT * FROM [table] WHERE id LIKE ?",
         "login_user_filter" =>  "SELECT * FROM [table] WHERE username LIKE ?"
     ];
@@ -151,7 +151,6 @@ class Admin_core extends CI_Model implements CoreInterface {
 
         $query_build   = str_replace("[table]", $this->db->dbprefix("user"), $this->my_querys['login']);
         $result        = $this->db->query($query_build , [$user , $user])->result()[0];
-
 
 
          $lang_data = new stdClass();

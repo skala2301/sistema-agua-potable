@@ -29,6 +29,9 @@ class Main extends CI_Model {
            // return $this->load->view("mainten/frontend/frontend" , '' , FALSE);
         }
 
+        $this->load->database();
+        echo "<pre>";
+        print_r($this->db->query("show tables")->result());
 
       //  echo $this->frontcontrol->JsonConfig();
 

@@ -14,7 +14,7 @@ body {
     margin: 0px !important;
     direction: "ltr";
     font-size: 14px;
-    background-color: black;
+    background-color: #f7f7f7;
 }
 
 .dropdown-menu > span > li > a {
@@ -29,12 +29,12 @@ body {
 }
 
 .page-header.navbar {
-    background-color: black;
+    background-color: #f7f7f7;
 }
 
 .page-sidebar,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover {
-    background-color:  black
+    background-color:  #f7f7f7
 }
 
 .page-header.navbar .menu-toggler {
@@ -45,7 +45,7 @@ body {
 .page-sidebar .page-sidebar-menu>li.heading>h3,
 .page-sidebar-closed.page-sidebar-fixed
 .page-sidebar:hover .page-sidebar-menu>li.heading>h3 {
-    color: white;
+    color: black;
 }
 
 
@@ -53,16 +53,17 @@ body {
 .page-sidebar .page-sidebar-menu>li.active>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active.open>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a {
-    background: darkblue;
+    background: white ;
     border-top-color: transparent;
-    color: #fff
+    color: black;
+    font-weight : 500;
 }
 
 .page-sidebar .page-sidebar-menu>li.active.open>a:hover,
 .page-sidebar .page-sidebar-menu>li.active>a:hover,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active.open>a:hover,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a:hover {
-    background: mediumblue;
+    background: white ;
 }
 
 .page-sidebar .page-sidebar-menu .sub-menu>li.active>a,
@@ -71,28 +72,40 @@ body {
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li.active>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li.open>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li:hover>a {
-    background: darkblue !important
+    background: white !important
 }
 
 .page-header.navbar .top-menu .navbar-nav>li.dropdown .dropdown-toggle:hover,
 .page-header.navbar .top-menu .navbar-nav>li.dropdown.open .dropdown-toggle {
-    background-color: darkblue;
+    background-color: white;
 }
 
 
 .page-sidebar .page-sidebar-menu>li>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li>a {
     border-top: 1px solid #3d4957;
-    color: #b4bcc8
+    color: #777
 }
 
 .page-sidebar .page-sidebar-menu>li.open>a,
 .page-sidebar .page-sidebar-menu>li:hover>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.open>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li:hover>a {
-    background: #2C3542;
-    color: white;
+    background: white ;
+    color: black;
 }
 
+
+.page-header.navbar .top-menu .navbar-nav>li.dropdown-language>.dropdown-toggle>.langname, .page-header.navbar .top-menu .navbar-nav>li.dropdown-user>.dropdown-toggle>.username, .page-header.navbar .top-menu .navbar-nav>li.dropdown-user>.dropdown-toggle>i {
+    color: black;
+    font-weight: 400;
+}
+
+
+.page-sidebar .page-sidebar-menu .sub-menu>li>a,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li>a {
+    color: black;
+    font-weight: 400;
+}
 
 
