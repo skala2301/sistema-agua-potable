@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de6a1901-27aa-4d3f-8da4-f0fde4ebe6e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/photon/New_device.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/photon/Show_device.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/databases/scada_2017-02-03.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/photon/new_device.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/photon/show_devices.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/photon/New_device.php" afterPath="$PROJECT_DIR$/application/models/photon/New_device.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/photon/Show_device.php" afterPath="$PROJECT_DIR$/application/models/photon/Show_device.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,22 +59,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Profile.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/profile/Profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4800">
-              <caret line="367" column="0" lean-forward="false" selection-start-line="367" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
-              <folding>
-                <element signature="n#_render#0;n#Profile#0;n#!!top" expanded="false" />
-                <element signature="n#log_profile#0;n#Profile#0;n#!!top" expanded="false" />
-                <marker date="1486093192000" expanded="true" signature="248:309" ph="SELECT count... " />
-                <marker date="1486093192000" expanded="true" signature="337:383" ph="SELECT data " />
-                <marker date="1486093192000" expanded="true" signature="410:450" ph="SELECT data " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ga_dashboard.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/assets/dashboard/css/ga_dashboard.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -85,11 +69,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="New_device.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="New_device.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/photon/New_device.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_device.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/photon/new_device.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_devices.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/photon/show_devices.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="121" lean-forward="false" selection-start-line="0" selection-start-column="121" selection-end-line="0" selection-end-column="121" />
               <folding />
             </state>
           </provider>
@@ -98,8 +102,8 @@
       <file leaf-file-name="Show_device.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/photon/Show_device.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,32 +114,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2550">
               <caret line="183" column="31" lean-forward="false" selection-start-line="183" selection-start-column="31" selection-end-line="183" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/assets/layouts/layout/css/layout.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6060">
-              <caret line="415" column="91" lean-forward="false" selection-start-line="415" selection-start-column="83" selection-end-line="415" selection-end-column="91" />
-              <folding>
-                <element signature="e#15228#15768#0" expanded="false" />
-                <element signature="e#70932#71078#0" expanded="false" />
-                <element signature="e#71105#71409#0" expanded="false" />
-                <element signature="e#71524#71882#0" expanded="false" />
-                <element signature="e#72003#72260#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/assets/layouts/layout/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -175,6 +153,9 @@
         <option value="$PROJECT_DIR$/databases/scada_2017-02-03.sql" />
         <option value="$PROJECT_DIR$/application/models/photon/Show.php" />
         <option value="$PROJECT_DIR$/application/models/photon/New_device.php" />
+        <option value="$PROJECT_DIR$/application/views/photon/new_device.php" />
+        <option value="$PROJECT_DIR$/application/models/photon/Show_device.php" />
+        <option value="$PROJECT_DIR$/application/views/photon/show_devices.php" />
       </list>
     </option>
   </component>
@@ -245,6 +226,94 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constants" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photon" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,7 +466,7 @@
       <workItem from="1485917971975" duration="1547000" />
       <workItem from="1485928256169" duration="3000" />
       <workItem from="1485998491615" duration="9638000" />
-      <workItem from="1486173531450" duration="830000" />
+      <workItem from="1486173531450" duration="2263000" />
     </task>
     <task id="LOCAL-00001" summary="-cambios de look css , modificacion de templates para">
       <created>1486097642978</created>
@@ -406,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486097642978</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="actualizando db">
+      <created>1486179262460</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1486179262460</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12018000" />
+    <option name="totallyTimeSpent" value="13451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="34" y="23" width="1246" height="777" extended-state="0" />
@@ -444,7 +520,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-sistema smart water JFP" />
     <MESSAGE value="-cambios de look css , modificacion de templates para" />
-    <option name="LAST_COMMIT_MESSAGE" value="-cambios de look css , modificacion de templates para" />
+    <MESSAGE value="actualizando db" />
+    <option name="LAST_COMMIT_MESSAGE" value="actualizando db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -657,13 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/looking/looking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/frontend/Looking.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -676,18 +746,6 @@
         <state relative-caret-position="480">
           <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/system/Admin_core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding>
-            <marker date="1486090601000" expanded="true" signature="643:745" ph="SELECT count... " />
-            <marker date="1486090601000" expanded="true" signature="781:818" ph="SELECT * FRO... " />
-            <marker date="1486090601000" expanded="true" signature="854:897" ph="SELECT * FRO... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,10 +825,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/looking/looking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/mainten/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/system/constants/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/system/Admin_core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2280">
+          <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="58" />
+          <folding>
+            <marker date="1486090601000" expanded="true" signature="643:745" ph="SELECT count... " />
+            <marker date="1486090601000" expanded="true" signature="781:818" ph="SELECT * FRO... " />
+            <marker date="1486090601000" expanded="true" signature="854:897" ph="SELECT * FRO... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/system/Email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/libraries/Fileinfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/photon/new_device.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -783,18 +893,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/photon/Show_device.php">
+    <entry file="file://$PROJECT_DIR$/application/models/photon/New_device.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/photon/New_device.php">
+    <entry file="file://$PROJECT_DIR$/application/models/photon/Show_device.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/photon/show_devices.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="121" lean-forward="false" selection-start-line="0" selection-start-column="121" selection-end-line="0" selection-end-column="121" />
           <folding />
         </state>
       </provider>
