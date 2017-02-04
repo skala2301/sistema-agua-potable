@@ -9,14 +9,36 @@ var photon_ = {
 
         $("#create_new_").click(function () {
 
-            alert();
 
             let name = $("#txt-new-element").val();
-            $("#device_name").val(name);
 
-            ReactDOM.render( React.createElement(PhotonInsert,{})
-                , document.getElementById("render_view")
-            );
+
+            if(name == '' || name == 'undefined' || name == null  )
+            {
+               alert("ingresar el nombre de su paquete");
+               return;
+            }
+
+
+            ga_request({
+                location : "tools_devices",
+                dir : "photon" ,
+                func : ""
+            } , {
+                "package" : name
+            } , function (result) {
+
+
+                $("#device_name").val(name);
+
+                ReactDOM.render( React.createElement(PhotonInsert,{})
+                    , document.getElementById("render_view")
+                );
+
+            });
+
+
+
 
         });
 

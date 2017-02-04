@@ -23,13 +23,13 @@
 
     <div class="portlet light bordered small-request">
     <div class="form-group form-md-line-input">
-        <input type="text" class="form-control" id="txt-new-element" placeholder="Nombre del elemento">
-        <span class="help-block">Nombre del elemento en la cual se asignara al proyecto </span>
+        <input type="text" class="form-control" id="txt-new-element" placeholder="Nombre del paquete ej: photon.package">
+        <span class="help-block">El nombre con el que se identificara el paquete de tu proyecto </span>
 
     </div>
 
         <div class="form-group " style="text-align: center;margin-top: 7%;">
-            <button id="create_new_" class="btn btn-primary" type="button">Crear Elemento</button>
+            <button id="create_new_" class="btn btn-primary" type="button">Crear Proyecto</button>
         </div>
     </div>
 
@@ -51,8 +51,7 @@
 
             console.log(document.readyState);
 
-            if($.trim(document.readyState) == 'complete'
-            )
+            if(document.addEventListener)
             {
                 photon_.init();
             }
