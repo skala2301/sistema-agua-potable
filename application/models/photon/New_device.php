@@ -117,6 +117,21 @@ class New_device extends CI_Model implements CoreInterface
     public function _javascript()
     {
         // TODO: Implement _javascript() method.
+
+        return [
+
+            array(
+                "type"          => "text/javascript" ,
+                "location"      => "header" ,
+                "script"        => site_url() . 'content/assets/apps/photon/photon.js'
+            ) ,//script exclusivo de navigator
+
+            array(
+                "type"          => "text/babel" ,
+                "location"      => "header" ,
+                "script"        => site_url() . 'content/assets/apps/photon/create_photon.js'
+            ) //cargamos el render
+        ];
     }
 
     /**

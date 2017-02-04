@@ -140,6 +140,7 @@
    
     <script>
         System.transpiler = 'babel';
+
         <?php
         
             /***
@@ -154,8 +155,10 @@
             <?php if(!is_null($s->mode) || !empty($s->mode)) : ?>
                 console.log('<?= $s->script ?> [IS IN DEBUG MODE ]');
             <?php endif; ?> 
-            System.import('<?= $s->script  ?>').then(console.log.bind(console));
+            System.import('<?= $s->script  ?>');
         <?php endforeach; ?>
+
+
     </script>
 
     <!-- icon or favicon -->

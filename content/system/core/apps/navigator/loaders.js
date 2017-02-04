@@ -1,4 +1,6 @@
     /**objeto navigator_ encargado de la manipulacion en carga***/
+
+
     var navigator_ = {
 
         load : ()=> {
