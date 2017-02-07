@@ -29,8 +29,10 @@
     </div>
 
         <div class="form-group " style="text-align: center;margin-top: 7%;">
-            <button id="create_new_" class="btn btn-primary" type="button">Crear Proyecto</button>
+            <button id="create_new_" class="btn btn-primary" type="button">Crear Paquete</button>
         </div>
+
+
     </div>
 
 </div>

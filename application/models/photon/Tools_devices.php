@@ -1,10 +1,17 @@
 <?php
 
+get_instance()->load->interfaces("Generic");
 
 class Tools_devices extends CI_Model implements Generic
 {
 
-    var $tables = null ;
+    protected $tables = null ;
+
+    protected $querys = [
+        "apks" => [
+            "is"   => "SELECT count(*) as 'count' FROM [table] WHERE [table].name = ? "
+        ]
+    ];
 
     public function __construct()
     {
@@ -16,7 +23,11 @@ class Tools_devices extends CI_Model implements Generic
     {
         // TODO: Implement Load_() method.
         $this->load->database();
-        $this->tables->meta = $this->db->dbprefix("metadata");
+        $this->load->helper(["database"]);
+        $this->tables = new stdClass();
+        $this->tables->meta         = $this->db->dbprefix("metadata");
+        $this->tables->apk          = $this->db->dbprefix("package");
+
     }
 
     public function Push_(... $data)
@@ -40,11 +51,32 @@ class Tools_devices extends CI_Model implements Generic
     }
 
 
-    public function find_packages($name = null ){
+    public function find_packages($name = null ) : string {
         if($name === null )
             $name = $this->input->post("package");
 
+        $query = set_database_query($this->tables->apk , "[table]" , $this->querys["apks"]["is"]);
+        $count_apks = $this->db->query($query , [$name])
+                                ->result()[0]
+                                ->count ?? 0;
+
+        if($count_apks == 0 )
+            return json_encode([
+                "status"    => false ,
+                "count"     => 0,
+                "name"      => $name
+            ]);
+        else
+            return json_encode([
+                "status"    => true ,
+                "count"     => $count_apks,
+                "name"      => $name
+            ]);
+
+
+        return  json_encode([]) ;
 
     }
+
 
 }

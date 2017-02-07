@@ -27,7 +27,19 @@ class MY_Loader extends CI_Loader {
      **/
     public function interfaces($interface){
         require_once APPPATH . "/interfaces/$interface" . ".php";
+
     }
+
+    /**
+     * @todo interface
+     * @version 1.0.0
+     * @author Rolando Arriaza
+     **/
+    public function generic_interface($interface){
+        require_once APPPATH . "/interfaces/$interface" . ".php";
+    }
+
+
 
     /**
      * @todo complement

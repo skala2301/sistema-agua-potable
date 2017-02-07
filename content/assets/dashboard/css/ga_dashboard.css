@@ -53,7 +53,7 @@ body {
 .page-sidebar .page-sidebar-menu>li.active>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active.open>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a {
-    background: white ;
+    background: skyblue ;
     border-top-color: transparent;
     color: black;
     font-weight : 500;
@@ -63,7 +63,7 @@ body {
 .page-sidebar .page-sidebar-menu>li.active>a:hover,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active.open>a:hover,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a:hover {
-    background: white ;
+    background: skyblue;
 }
 
 .page-sidebar .page-sidebar-menu .sub-menu>li.active>a,
@@ -72,12 +72,12 @@ body {
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li.active>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li.open>a,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li:hover>a {
-    background: white !important
+    background: skyblue !important
 }
 
 .page-header.navbar .top-menu .navbar-nav>li.dropdown .dropdown-toggle:hover,
 .page-header.navbar .top-menu .navbar-nav>li.dropdown.open .dropdown-toggle {
-    background-color: white;
+    background: skyblue ;
 }
 
 

@@ -150,7 +150,11 @@ class Admin_core extends CI_Model implements CoreInterface {
           */
 
         $query_build   = str_replace("[table]", $this->db->dbprefix("user"), $this->my_querys['login']);
-        $result        = $this->db->query($query_build , [$user , $user])->result()[0];
+        $result        = $this->db
+                                ->query($query_build , [$user , $user])
+                                ->result()[0] ?? (object) [ "count" => 0 , "id" => null  ];
+
+
 
 
          $lang_data = new stdClass();
