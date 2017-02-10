@@ -29,7 +29,7 @@
     </div>
 
         <div class="form-group " style="text-align: center;margin-top: 7%;">
-            <button id="create_new_" class="btn btn-primary" type="button">Crear Paquete</button>
+            <button id="create_new_" class="btn btn-primary " type="button">Crear Paquete</button>
         </div>
 
 
@@ -44,16 +44,15 @@
 
     /* modo no asincrono entrada por htpp* **/
     $(document).ready(()=>{
-        photon_.init();
+        if(document.readyState)
+                photon_.init();
     });
 
     /** carga modo asincrono XHR**/
     (function($) {
         try{
 
-            console.log(document.readyState);
-
-            if(document.addEventListener)
+            if(document.addEventListener && !document.readyState)
             {
                 photon_.init();
             }

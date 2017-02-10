@@ -77,8 +77,15 @@
                 ga_(url_ + back_end); // ga_ is normal function
             core.sidebar_(); // sidebar function 
         });
+
+        window.setTimeout(function () {
+            the_sidebar.nav_over();
+        },1000);
+
+
     </script>
-    
+
+
     <!--END SYSTEM LOADER SCRIPT -->
     
 

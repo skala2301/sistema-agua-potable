@@ -30,6 +30,7 @@ var controller_menu     = $("#ga_controller_menu").val();
 var dashboard_          = $("#ga_dashboard").val();
 
 
+
 var NavBar = React.createClass({
 
     getInitialState: function () {
@@ -77,6 +78,11 @@ var NavBar = React.createClass({
     componentDidMount: function () {
         this.Server();
         setInterval(this.Server, this.props.interval);
+
+    },
+
+    componentWillMount : function(){
+
     },
     
     sidebar_: (l, $this) => {
@@ -342,6 +348,11 @@ ReactDOM.render(
     <MenuBar url={url} controller={controller_menu} interval={interval}/>,
     document.getElementById('ga_sub_menu')
 );
+
+
+
+
+
 
 
 

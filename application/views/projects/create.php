@@ -23,7 +23,7 @@
 
     <div class="col-md-12">
 
-        <div class="portlet light bordered small-request">
+        <div id="_render" class="portlet light bordered small-request">
 
             <div class="form-group form-md-line-input">
                 <input type="text" class="form-control" id="txt-project" placeholder="Nombre del proyecto ">

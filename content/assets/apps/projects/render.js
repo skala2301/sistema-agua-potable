@@ -2,41 +2,37 @@
 
 export default function() {}
 
-var end_render = React.createClass({
 
+end_project_render = React.createClass({
 
-    getInicialState : function () {
-        return {};
-    },
-
-    componentWillMount : function()
-    {
-
-    },
-
-    componentWillReceiveProps(nextProps) {
-
-    },
-
-    componentWillUpdate: function(nextProps, nextState){
-
-    },
-
-    shouldComponentUpdate: function(nextProps, nextState)
-    {
-        return true;
-    },
-
-    componentDidMount: function()
-    {
-
-    },
 
     render : function () {
         return (
             <div id="body-render">
-                <input type="text"  />
-            </div>);
+                <p
+                    style={{
+                        'border': '1px solid',
+                        'border-style': 'dashed',
+                        'color': 'red',
+                        'text-align': 'center',
+                        'font-size': '1.0em'
+                    }}
+                >EL PROYECTO <b>{this.props.name}</b> SE CREO CON EXITO</p>
+            </div>
+        );
     }
 
 });
+
+
+/**
+ *
+ *
+ * element.style {
+    border-color: red;
+    border-style: dashed;
+    color: blue;
+    background-color: antiquewhite;
+}
+ *
+ * **/

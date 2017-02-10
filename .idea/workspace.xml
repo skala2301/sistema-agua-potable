@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de6a1901-27aa-4d3f-8da4-f0fde4ebe6e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/helpers/database_helper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/projects/Create_project.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/projects/create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/apps/projects/project_loader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/apps/projects/render.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/projects/Show_project.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/setup.json" afterPath="$PROJECT_DIR$/application/config/setup.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/MY_Loader.php" afterPath="$PROJECT_DIR$/application/core/MY_Loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/custom_helper.php" afterPath="$PROJECT_DIR$/application/helpers/custom_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/photon/Tools_devices.php" afterPath="$PROJECT_DIR$/application/models/photon/Tools_devices.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/system/Admin_core.php" afterPath="$PROJECT_DIR$/application/models/system/Admin_core.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/photon/New_device.php" afterPath="$PROJECT_DIR$/application/models/photon/New_device.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/projects/Create_project.php" afterPath="$PROJECT_DIR$/application/models/projects/Create_project.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/photon/new_device.php" afterPath="$PROJECT_DIR$/application/views/photon/new_device.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/assets/apps/photon/photon.js" afterPath="$PROJECT_DIR$/content/assets/apps/photon/photon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/assets/dashboard/css/ga_dashboard.css" afterPath="$PROJECT_DIR$/content/assets/dashboard/css/ga_dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/projects/create.php" afterPath="$PROJECT_DIR$/application/views/projects/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/system/dashboard/footer.php" afterPath="$PROJECT_DIR$/application/views/system/dashboard/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/assets/apps/projects/project_loader.js" afterPath="$PROJECT_DIR$/content/assets/apps/projects/project_loader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/assets/apps/projects/render.js" afterPath="$PROJECT_DIR$/content/assets/apps/projects/render.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js" afterPath="$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/system/core/js/garrobo/ga_sidebar.js" afterPath="$PROJECT_DIR$/content/system/core/js/garrobo/ga_sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/system/core/js/garrobo/render_variables.js" afterPath="$PROJECT_DIR$/content/system/core/js/garrobo/render_variables.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,35 +37,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Create_project.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/projects/Create_project.php">
+      <file leaf-file-name="render_variables.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/render_variables.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="151" column="46" lean-forward="false" selection-start-line="151" selection-start-column="46" selection-end-line="151" selection-end-column="46" />
-              <folding>
-                <marker date="1486440938000" expanded="true" signature="129:191" ph="SELECT count... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/libraries/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="323" column="20" lean-forward="false" selection-start-line="323" selection-start-column="20" selection-end-line="323" selection-end-column="30" />
-              <folding>
-                <element signature="n#pretty_names#0;n#User#0;n#!!top" expanded="false" />
-                <marker date="1485738670000" expanded="true" signature="1562:1615" ph="SELECT name " />
-                <marker date="1485738670000" expanded="true" signature="1655:1706" ph="SELECT name " />
-                <marker date="1485738670000" expanded="true" signature="1779:1829" ph="SELECT data " />
-                <marker date="1485738670000" expanded="true" signature="1918:1956" ph="DELETE FROM " />
-                <marker date="1485738670000" expanded="true" signature="2056:2113" ph="DELETE FROM " />
-                <marker date="1485738670000" expanded="true" signature="2161:2219" ph="SELECT count... " />
-                <marker date="1485738670000" expanded="true" signature="2444:2515" ph="SELECT [tabl... " />
-                <marker date="1485738670000" expanded="true" signature="10504:10558" ph="SELECT count... ${$table}" />
-                <marker date="1485738670000" expanded="true" signature="11417:11471" ph="SELECT count... ${$table}" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,62 +50,73 @@
       <file leaf-file-name="new_device.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/photon/new_device.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-364">
-              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="465">
+              <caret line="31" column="60" lean-forward="false" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project_loader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/assets/apps/projects/project_loader.js">
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/system/dashboard/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="99" column="2" lean-forward="true" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="2" />
+            <state relative-caret-position="476">
+              <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ga_sidebar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/ga_sidebar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-310">
+              <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
               <folding>
-                <element signature="e#652#2459#0" expanded="false" />
+                <element signature="e#1412#2386#0" expanded="false" />
+                <element signature="e#2591#4238#0" expanded="false" />
+                <element signature="e#4264#4380#0" expanded="false" />
+                <element signature="e#4411#6041#0" expanded="false" />
+                <element signature="e#7154#9403#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="render.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/assets/apps/projects/render.js">
+      <file leaf-file-name="ga_functions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scratch.html" pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="photon.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/photon.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+            <state relative-caret-position="470">
+              <caret line="654" column="17" lean-forward="false" selection-start-line="654" selection-start-column="17" selection-end-line="654" selection-end-column="17" />
               <folding>
-                <element signature="e#0#47#0" expanded="false" />
+                <marker date="1486695017000" expanded="true" signature="2312:2339" ph="..." />
+                <marker date="1486695017000" expanded="true" signature="3353:3367" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_photon.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/create_photon.js">
+      <file leaf-file-name="nav_render.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/system/core/apps/navigator/nav_render.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="28" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="3540">
+              <caret line="285" column="33" lean-forward="false" selection-start-line="285" selection-start-column="33" selection-end-line="285" selection-end-column="33" />
+              <folding>
+                <element signature="e#10652#15387#0" expanded="false" />
+                <element signature="e#15424#18364#0" expanded="false" />
+                <element signature="e#18404#26339#0" expanded="false" />
+                <element signature="e#26380#31226#0" expanded="false" />
+                <element signature="e#31271#31410#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Show_project.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/projects/Show_project.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1680">
+              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -140,8 +125,8 @@
       <file leaf-file-name="New_device.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/photon/New_device.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="126" column="40" lean-forward="false" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -150,8 +135,8 @@
       <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/projects/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="32" column="80" lean-forward="false" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="94" />
+            <state relative-caret-position="356">
+              <caret line="62" column="41" lean-forward="true" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -197,25 +182,30 @@
         <option value="$PROJECT_DIR$/application/models/photon/Show.php" />
         <option value="$PROJECT_DIR$/application/models/photon/Show_device.php" />
         <option value="$PROJECT_DIR$/application/views/photon/show_devices.php" />
-        <option value="$PROJECT_DIR$/content/system/core/js/garrobo/render_variables.js" />
         <option value="$PROJECT_DIR$/application/views/system/dashboard/header.php" />
         <option value="$PROJECT_DIR$/content/assets/apps/photon/create_photon.js" />
         <option value="$PROJECT_DIR$/content/system/core/apps/navigator/loaders.js" />
-        <option value="$PROJECT_DIR$/application/models/photon/New_device.php" />
         <option value="$PROJECT_DIR$/application/interfaces/Generic.php" />
-        <option value="$PROJECT_DIR$/application/views/photon/new_device.php" />
         <option value="$PROJECT_DIR$/content/assets/dashboard/css/ga_dashboard.css" />
         <option value="$PROJECT_DIR$/application/models/system/Admin_core.php" />
         <option value="$PROJECT_DIR$/application/helpers/custom_helper.php" />
         <option value="$PROJECT_DIR$/application/helpers/database_helper.php" />
         <option value="$PROJECT_DIR$/application/core/MY_Loader.php" />
         <option value="$PROJECT_DIR$/application/models/photon/Tools_devices.php" />
-        <option value="$PROJECT_DIR$/content/assets/apps/photon/photon.js" />
         <option value="$PROJECT_DIR$/application/models/Projects/Create_project.php" />
+        <option value="$PROJECT_DIR$/content/assets/apps/photon/photon.js" />
         <option value="$PROJECT_DIR$/application/views/projects/create.php" />
-        <option value="$PROJECT_DIR$/content/assets/apps/projects/project_loader.js" />
-        <option value="$PROJECT_DIR$/application/models/projects/Create_project.php" />
+        <option value="$PROJECT_DIR$/content/system/core/js/garrobo/render_variables.js" />
         <option value="$PROJECT_DIR$/content/assets/apps/projects/render.js" />
+        <option value="$PROJECT_DIR$/application/models/projects/Create_project.php" />
+        <option value="$PROJECT_DIR$/content/assets/apps/projects/project_loader.js" />
+        <option value="$PROJECT_DIR$/application/models/projects/Show.php" />
+        <option value="$PROJECT_DIR$/application/models/projects/Show_project.php" />
+        <option value="$PROJECT_DIR$/application/models/photon/New_device.php" />
+        <option value="$PROJECT_DIR$/application/views/photon/new_device.php" />
+        <option value="$PROJECT_DIR$/content/system/core/js/garrobo/ga_sidebar.js" />
+        <option value="$PROJECT_DIR$/application/views/system/dashboard/footer.php" />
+        <option value="$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js" />
       </list>
     </option>
   </component>
@@ -294,6 +284,158 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="garrobo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="navigator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -461,6 +603,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-agua-potable" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="projects" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -546,24 +714,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="photon" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistema-agua-potable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistema-agua-potable" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -748,7 +898,7 @@
       <workItem from="1485917971975" duration="1547000" />
       <workItem from="1485928256169" duration="3000" />
       <workItem from="1485998491615" duration="9638000" />
-      <workItem from="1486173531450" duration="30001000" />
+      <workItem from="1486173531450" duration="42030000" />
     </task>
     <task id="LOCAL-00001" summary="-cambios de look css , modificacion de templates para">
       <created>1486097642978</created>
@@ -785,17 +935,24 @@
       <option name="project" value="LOCAL" />
       <updated>1486232055854</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="programacion de proyectos">
+      <created>1486443920291</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1486443920291</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41189000" />
+    <option name="totallyTimeSpent" value="53218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="23" width="1245" height="777" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29156625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29076305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -845,7 +1002,8 @@
     <MESSAGE value="actualizando db" />
     <MESSAGE value="creando vistas y modelos para los dispositivos" />
     <MESSAGE value="interfaz generica , cambios de sistema , generador packacge" />
-    <option name="LAST_COMMIT_MESSAGE" value="interfaz generica , cambios de sistema , generador packacge" />
+    <MESSAGE value="programacion de proyectos" />
+    <option name="LAST_COMMIT_MESSAGE" value="programacion de proyectos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -854,30 +1012,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/databases/scada_2017-02-03.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/looking/looking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/mainten/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/system/constants/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -915,21 +1049,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="121" lean-forward="false" selection-start-line="0" selection-start-column="121" selection-end-line="0" selection-end-column="121" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/system/core/apps/navigator/nav_render.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
-          <folding>
-            <element signature="e#204#10614#0" expanded="false" />
-            <element signature="e#10652#15387#0" expanded="false" />
-            <element signature="e#15424#18364#0" expanded="false" />
-            <element signature="e#18404#26339#0" expanded="false" />
-            <element signature="e#26380#31226#0" expanded="false" />
-            <element signature="e#31271#31410#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -989,14 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/render_variables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1066,33 +1177,6 @@
             <marker date="1486274542000" expanded="true" signature="643:745" ph="SELECT count... " />
             <marker date="1486274542000" expanded="true" signature="781:818" ph="SELECT * FRO... " />
             <marker date="1486274542000" expanded="true" signature="854:897" ph="SELECT * FRO... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2760">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1485738672000" expanded="true" signature="2312:2339" ph="..." />
-            <marker date="1485738672000" expanded="true" signature="3353:3367" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/system/core/apps/navigator/loaders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="368" column="27" lean-forward="false" selection-start-line="368" selection-start-column="27" selection-end-line="368" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!block;n#load#0;n#load#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#tree_show#0;n#tree_show#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#recursive_tree#0;n#recursive_tree#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#edit#0;n#edit#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#saveEdit#0;n#saveEdit#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#modal#0;n#modal#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#delete#0;n#delete#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1229,26 +1313,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/photon/New_device.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/projects/create.php">
+    <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/create_photon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="32" column="80" lean-forward="false" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="94" />
+        <state relative-caret-position="-10">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/photon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="58" column="18" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="58" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/assets/apps/projects/render.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/libraries/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="323" column="20" lean-forward="false" selection-start-line="323" selection-start-column="20" selection-end-line="323" selection-end-column="30" />
+        <state relative-caret-position="3146">
+          <caret line="458" column="34" lean-forward="true" selection-start-line="458" selection-start-column="34" selection-end-line="458" selection-end-column="34" />
           <folding>
             <element signature="n#pretty_names#0;n#User#0;n#!!top" expanded="false" />
             <marker date="1485738670000" expanded="true" signature="1562:1615" ph="SELECT name " />
@@ -1264,65 +1366,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/photon/new_device.php">
+    <entry file="file://$PROJECT_DIR$/content/assets/apps/projects/project_loader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="290">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/projects/Create_project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="151" column="46" lean-forward="false" selection-start-line="151" selection-start-column="46" selection-end-line="151" selection-end-column="46" />
+        <state relative-caret-position="236">
+          <caret line="147" column="39" lean-forward="true" selection-start-line="147" selection-start-column="39" selection-end-line="147" selection-end-column="39" />
           <folding>
-            <marker date="1486440938000" expanded="true" signature="129:191" ph="SELECT count... " />
+            <marker date="1486610631000" expanded="true" signature="129:191" ph="SELECT count... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/photon.js">
+    <entry file="file://$PROJECT_DIR$/application/models/photon/New_device.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        <state relative-caret-position="270">
+          <caret line="126" column="40" lean-forward="false" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/projects/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="62" column="41" lean-forward="true" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/render_variables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/projects/Show_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1680">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/photon/new_device.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="60" lean-forward="false" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/system/core/apps/navigator/loaders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="368" column="27" lean-forward="false" selection-start-line="368" selection-start-column="27" selection-end-line="368" selection-end-column="27" />
           <folding>
-            <element signature="e#0#47#0" expanded="false" />
+            <element signature="n#!!block;n#load#0;n#load#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#tree_show#0;n#tree_show#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#recursive_tree#0;n#recursive_tree#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#edit#0;n#edit#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#saveEdit#0;n#saveEdit#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#modal#0;n#modal#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#delete#0;n#delete#0;n#!!block;n#navigator_#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/create_photon.js">
+    <entry file="file://$PROJECT_DIR$/content/system/core/apps/navigator/nav_render.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/assets/apps/projects/project_loader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="99" column="2" lean-forward="true" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="2" />
+        <state relative-caret-position="3540">
+          <caret line="285" column="33" lean-forward="false" selection-start-line="285" selection-start-column="33" selection-end-line="285" selection-end-column="33" />
           <folding>
-            <element signature="e#652#2459#0" expanded="false" />
+            <element signature="e#10652#15387#0" expanded="false" />
+            <element signature="e#15424#18364#0" expanded="false" />
+            <element signature="e#18404#26339#0" expanded="false" />
+            <element signature="e#26380#31226#0" expanded="false" />
+            <element signature="e#31271#31410#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/assets/apps/projects/render.js">
+    <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/ga_sidebar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="-310">
+          <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
+          <folding>
+            <element signature="e#1412#2386#0" expanded="false" />
+            <element signature="e#2591#4238#0" expanded="false" />
+            <element signature="e#4264#4380#0" expanded="false" />
+            <element signature="e#4411#6041#0" expanded="false" />
+            <element signature="e#7154#9403#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/system/dashboard/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
+    <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="470">
+          <caret line="654" column="17" lean-forward="false" selection-start-line="654" selection-start-column="17" selection-end-line="654" selection-end-column="17" />
+          <folding>
+            <marker date="1486695017000" expanded="true" signature="2312:2339" ph="..." />
+            <marker date="1486695017000" expanded="true" signature="3353:3367" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

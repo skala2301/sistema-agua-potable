@@ -32,9 +32,15 @@ var project_data =
 
         $("#create_new_project").click(function () {
             let name = $("#txt-project").val();
+
+
+            if(name == '' || name === null ){
+                alert("favor agregar un nombre de proyecto");
+                return;
+            }
+
+
             project_data.exist_project(name , function (data) {
-
-
 
                 var toast = new ga_toast();
                 toast.config();
@@ -66,7 +72,7 @@ var project_data =
 
                 project_data.create_project(name , active , function (result) {
 
-                        console.log(result);
+                        let name            = $("#txt-project").val();
 
                         var toast = new ga_toast();
                         toast.config();
@@ -81,7 +87,14 @@ var project_data =
 
                        if(result.result == true ){
 
+                           ReactDOM.render( React.createElement(end_project_render,{
+                                  name : name
+                               })
+                               , document.getElementById("_render")
+                           );
 
+
+                           return true;
 
                        }else{
                            toast.set_toast("No se pudo crear el proyecto , intente denuevo mas tarde." , "" , toast.warning_data);

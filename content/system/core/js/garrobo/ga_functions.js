@@ -627,7 +627,71 @@ var get_system_langs = function( result )
         ga_error_handle("Error generado en ga_functions -> get_system_langs", error, "ga_functions" , 0);
     });
 
-}
+};
+
+
+
+var the_sidebar = {
+
+    nav_constants : {
+        nav_         : window.location.host,
+        path_        : window.location.pathname,
+        proto_       : window.location.protocol
+    },
+
+    nav_over : ()=>{
+
+        var nav_ = $("#ga_nav");
+
+        nav_.find("ul")
+            .find("li")
+            .each(function(){
+                let $that = $(this);
+                if($that.find("ul").length){
+                    the_sidebar.nav_ul_($that.find("ul") , $that);
+                }else{
+                    $(this).find("li").each(function () {
+                        let t = $(this);
+                        let a = t.find("a");
+                        the_sidebar.nav_li(a,t,$that);
+                    });
+                }
+            });
+
+    },
+
+    nav_ul_ : (ul , $that) => {
+        if($(ul).find("ul").length){
+            return the_sidebar.nav_ul_($(ul).find("ul") , $that);
+        }
+        else {
+            $(ul).find("li").each(function () {
+                let t = $(this);
+                let a = t.find("a");
+                the_sidebar.nav_li(a,t,$that);
+            });
+        }
+    },
+
+
+    nav_li : (li , t , $that )=>{
+
+        if(li.length ){
+
+            let href = $(li).attr("href");
+
+            href = href.replace( "/" + the_sidebar.nav_constants.nav_  , "");
+            href = href.replace(the_sidebar.nav_constants.proto_ + "//" , "");
+
+            if(("/" + href   ) === the_sidebar.nav_constants.path_){
+                $that.addClass("open active");
+                t.addClass("open active");
+            }
+        }
+
+    }
+
+};
 
 
 

@@ -15,4 +15,9 @@ var PhotonInsert    = null;
 var PhotonRender    = null;
 
 
+/**
+ * varibles de renderizado para proyectos
+ * **/
+var end_project_render      = null;
+
 

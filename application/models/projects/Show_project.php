@@ -1,15 +1,8 @@
 <?php
 
 
-class New_device extends CI_Model implements CoreInterface
+class Show_project extends CI_Model implements CoreInterface
 {
-
-
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
 
     /**
      * @todo inicia todos los componentes necesarios
@@ -30,9 +23,6 @@ class New_device extends CI_Model implements CoreInterface
     public function _render($params = NULL)
     {
         // TODO: Implement _render() method.
-
-        return $this->load->view("photon/new_device" , [] , TRUE );
-
     }
 
     /**
@@ -117,22 +107,6 @@ class New_device extends CI_Model implements CoreInterface
     public function _javascript()
     {
         // TODO: Implement _javascript() method.
-
-        return [
-
-            array(
-                "type"          => "text/javascript" ,
-                "location"      => "header" ,
-                "script"        => site_url() . 'content/assets/apps/photon/photon.js',
-                "systemjs"      => false
-            ) ,//script exclusivo de navigator
-
-            array(
-                "type"          => "text/babel" ,
-                "location"      => "header" ,
-                "script"        => site_url() . 'content/assets/apps/photon/create_photon.js'
-            ) //cargamos el render
-        ];
     }
 
     /**

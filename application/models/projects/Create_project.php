@@ -142,18 +142,20 @@ class Create_project extends CI_Model implements  CoreInterface
         return [
 
             array(
-                "type"          => "text/javascript" ,
-                "location"      => "footer" ,
-                "script"        => site_url() . 'content/assets/apps/projects/project_loader.js',
-                "systemjs"      => false
-            ),
-
-            array(
                 "type"          => "text/babel" ,
                 "location"      => "header" ,
                 "script"        => site_url() . 'content/assets/apps/projects/render.js',
                 "systemjs"      => true
+            ),
+
+            array(
+                "type"          => "text/javascript" ,
+                "location"      => "footer" ,
+                "script"        => site_url() . 'content/assets/apps/projects/project_loader.js',
+                "systemjs"      => false
             )
+
+
         ];
     }
 
@@ -271,7 +273,8 @@ class Create_project extends CI_Model implements  CoreInterface
 
             if(is_null($privs))
             {
-                $privs = $this->user->get()->privileges()->parent;
+                //$privs = $this->user->get()->privileges()->parent;
+                $privs = $this->user->get()->id();
             }
 
 
