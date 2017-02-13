@@ -14,8 +14,6 @@
     <small>(Version 1.0.0)</small>
 </h3>
 
-<input type="hidden" value="" id="device_name" >
-
 
 <div id="render_view" class="row">
 

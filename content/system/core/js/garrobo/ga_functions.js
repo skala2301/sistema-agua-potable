@@ -643,20 +643,29 @@ var the_sidebar = {
 
         var nav_ = $("#ga_nav");
 
-        nav_.find("ul")
-            .find("li")
-            .each(function(){
-                let $that = $(this);
-                if($that.find("ul").length){
-                    the_sidebar.nav_ul_($that.find("ul") , $that);
-                }else{
-                    $(this).find("li").each(function () {
-                        let t = $(this);
-                        let a = t.find("a");
-                        the_sidebar.nav_li(a,t,$that);
-                    });
-                }
-            });
+
+            nav_.find("ul")
+                .find("li")
+                .each(function(){
+                    let $that = $(this);
+                    if($that.find("ul").length){
+                        the_sidebar.nav_ul_($that.find("ul") , $that);
+                    }else{
+                        $(this).find("li").each(function () {
+                            let t = $(this);
+                            let a = t.find("a");
+                            the_sidebar.nav_li(a,t,$that);
+                        });
+                    }
+                });
+
+
+
+        nav_.find("li").each(function () {
+            the_sidebar.nav_li($(this).find("a"),$(this),nav_);
+        });
+
+
 
     },
 

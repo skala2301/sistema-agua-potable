@@ -1,8 +1,9 @@
 /***
  * @author Rolando Arriaza <rolignu90>
- * @version 2.1.0
+ * @version 2.1.5
  * @todo ga_sidebar
  * @licence MIT
+ * @update 9-feb-2017
  * @React ga_sidebar system interface
  *
  *  <NabVar> es una funcion en la cual hace que el sidebar sea dinamico UTILIZANDO REACT JS
@@ -57,6 +58,7 @@ var NavBar = React.createClass({
         }).done((a) => {
             try {
 
+
                 let k = JSON.parse(a);
                 let m = [];
                 $.each(k, function (x, y) {
@@ -71,6 +73,8 @@ var NavBar = React.createClass({
             }
         }).fail(function (e, status) {
             console.log(status);
+            console.log(e);
+            //console.log("error----->");
         });
 
     },
@@ -80,6 +84,12 @@ var NavBar = React.createClass({
         setInterval(this.Server, this.props.interval);
 
     },
+
+    componentDidUpdate: function(prevProps, prevState){
+        the_sidebar.nav_over(); //agregado en la version 2.1.5
+        return false;
+    },
+
 
     componentWillMount : function(){
 
@@ -272,6 +282,7 @@ var MenuBar = React.createClass({
 
         }).done((a) => {
             try {
+                //console.log(a);
                 let k = JSON.parse(a);
                 let m = [];
                 $.each(k, function (x, y) {
@@ -281,8 +292,8 @@ var MenuBar = React.createClass({
                     objects: m
                 });
             }catch(ex){
-                console.log("Error sidebar : --->");
-                console.log(ex);
+                //console.log("Error sidebar : --->");
+                //console.log(ex);
             }
         }).fail(function (e, status) {
             console.log(status);

@@ -1,18 +1,40 @@
 <?php
 
 
-class New_device extends CI_Model implements CoreInterface
+class Tools_project extends CI_Model implements CoreInterface
 {
 
+    protected $querys = [
+        "get_project" => "select [table].id as 'id' , [table].name as 'name' from [table] where [table].active = 1 and [table].privs like ?;",
+        "privs"       => "select  p.privs as 'privs' from [table] p where p.id = ?"
+    ];
 
-    protected  $table      = "device" ;
+
+    protected  $table = "project";
 
     public function __construct()
     {
         parent::__construct();
-
         $this->load->database();
-        $this->table =  $this->db->dbprefix($this->table);
+        $this->load->helper(["database"]);
+        $this->table = $this->db->dbprefix($this->table);
+    }
+
+    public function get_privs_project($id)
+    {
+        $query = set_database_query($this->table , "[table]" , $this->querys["privs"]);
+        return $this->db->query($query, [$id])->result()[0]->privs ?? 0 ;
+    }
+
+
+
+    public function  get_projects(){
+
+        $query      = set_database_query( $this->table ,"[table]"  , $this->querys['get_project']);
+        $uid        = $this->user->get()->id();
+        $result     = $this->db->query($query , [ "%"  . $uid . "%" ])->result();
+        //print_r($this->db->last_query());
+        return json_encode($result);
     }
 
 
@@ -35,9 +57,6 @@ class New_device extends CI_Model implements CoreInterface
     public function _render($params = NULL)
     {
         // TODO: Implement _render() method.
-
-        return $this->load->view("photon/new_device" , [] , TRUE );
-
     }
 
     /**
@@ -122,28 +141,6 @@ class New_device extends CI_Model implements CoreInterface
     public function _javascript()
     {
         // TODO: Implement _javascript() method.
-
-        return [
-
-            array(
-                "type"          => "text/javascript" ,
-                "location"      => "header" ,
-                "script"        => site_url() . 'content/assets/apps/photon/photon.js',
-                "systemjs"      => false
-            ) ,//script exclusivo de navigator
-
-            array(
-                "type"          => "text/babel" ,
-                "location"      => "header" ,
-                "script"        => site_url() . 'content/assets/apps/photon/create_photon.js'
-            ) ,//cargamos el render
-            array(
-                "type"          => "text/javascript" ,
-                "location"      => "footer" ,
-                "script"        => site_url() . 'content/assets/apps/projects/project_loader.js',
-                "systemjs"      => false
-            )
-        ];
     }
 
     /**
@@ -222,71 +219,4 @@ class New_device extends CI_Model implements CoreInterface
     public function _actions()
     {
         // TODO: Implement _actions() method.
-    }
-
-    public function create_photon(){
-
-
-        $data       = [];
-        $serialize  =    $this->input->post("data");
-        $pkg        =    $this->input->post("pkg");
-
-        if(is_null($serialize) || empty($serialize))
-            return json_encode([
-                "status"        => false,
-                "msj"           => "Error al momento de procesar la data",
-                "data"          => $serialize
-            ]);
-
-
-        parse_str($serialize , $data);
-
-        $this->load->model("projects/tools_project" , "projects_");
-        $this->load->model("photon/tools_devices" , "tdevices_");
-
-        $project_id    = $data['photon-project'];
-        $project_privs = $this->projects_->get_privs_project($project_id);
-        $package       = $this->tdevices_->set_package($pkg , $project_id , $project_privs);
-
-
-        if(!$package->status ){
-            return json_encode([
-                "status"        => false,
-                "msj"           => "El paquete no se pudo crear, el proceso se ha terminado",
-                "data"          => null
-            ]);
-        }
-
-
-        $date = new DateTime("now");
-
-        $this->db->insert($this->table , [
-             "name"             => $data['photon-name'] ?? "",
-            "global_var"        => $data['photon-global'] ?? "",
-            "token"             => $data['photon-token'] ?? "",
-            "pid"               => $data['photon-id'] ?? "",
-            "create_date"       => $date->format("y-m-d h:m:s"),
-            "id_package"        => $package->id
-        ]);
-
-
-        if($this->db->affected_rows() == 0){
-
-            $this->tdevices_->delete_package($package->id);
-            return json_encode([
-                "status"        => false,
-                "msj"           => "la creacion de este dispositivo produjo un error",
-                "data"          => null
-            ]);
-        }
-
-        return json_encode([
-            "status"        => true,
-            "msj"           => "Dispositivo creado con exito !!",
-            "data"          => null
-        ]);
-
-
-    }
-
-}
+}}

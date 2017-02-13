@@ -38,7 +38,8 @@ class System {
                 "content/assets/dashboard/css/ga_dashboard.css",
                 "toast",
                 "content/assets/global/plugins/css/components.min.css",
-                "content/assets/global/plugins/css/plugins.min.css"
+                "content/assets/global/plugins/css/plugins.min.css",
+                "content/assets/global/plugins/ladda/ladda-themeless.min.css"
              
         ], "url");
 
@@ -93,7 +94,9 @@ class System {
             "content/assets/global/scripts/app.min.js",
             "content/assets/layouts/layout/scripts/layout.min.js",
             "content/assets/layouts/layout/scripts/demo.min.js",
-            "content/assets/layouts/global/scripts/quick-sidebar.min.js"
+            "content/assets/layouts/global/scripts/quick-sidebar.min.js",
+            "content/assets/global/plugins/ladda/spin.min.js",
+            "content/assets/global/plugins/ladda/ladda.min.js"
         ], "url");
 
 

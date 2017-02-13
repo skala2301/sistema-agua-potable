@@ -78,5 +78,33 @@ class Tools_devices extends CI_Model implements Generic
 
     }
 
+    public function set_package ($name , $id_project   , $privs = null )
+    {
+
+        $date = new DateTime("now");
+       // $this->db->trans_start();
+        $this->db->insert($this->tables->apk , [
+            "name"              => $name,
+            "active"            => 1,
+            "privs"             => $privs,
+            "id_project"        => $id_project,
+            "start_date"        => $date->format("y-m-d h:m:s")
+        ]);
+        //$this->db->trans_complete();
+
+        return (object) [
+            "status"    => $this->db->affected_rows() >= 1 ? true : false ,
+            "id"        => $this->db->insert_id() ?? null
+        ] ;
+    }
+
+
+    public function delete_package ($id){
+        $this->db->trans_start();
+        $this->db->where(["id" => $id]);
+        $this->db->delete($this->tables->apk );
+        $this->db->trans_complete();
+    }
+
 
 }

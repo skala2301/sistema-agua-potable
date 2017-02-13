@@ -78,11 +78,6 @@
             core.sidebar_(); // sidebar function 
         });
 
-        window.setTimeout(function () {
-            the_sidebar.nav_over();
-        },1000);
-
-
     </script>
 
 

@@ -12,7 +12,6 @@ var project_data =
         } , func );
     },
 
-
     create_project: (name , active = null , func ) => {
 
         let a = 0 ;
@@ -59,7 +58,7 @@ var project_data =
 
                 if(data.result >= 1)
                 {
-                    toast.set_toast("Poryecto ya existente" , "" , toast.warning_data);
+                    toast.set_toast("Proyecto ya existente" , "" , toast.warning_data);
                     $("#research").html("Ya existe un proyecto con este nombre").css({"opacity": "1"});
                     return false ;
                 }
@@ -108,6 +107,14 @@ var project_data =
             });
         });
 
+    },
+
+    get_projects : ( func) => {
+        ga_request({
+            dir : "projects",
+            model : "tools_project",
+            func : "get_projects"
+        } , {} , func );
     }
 
 };
