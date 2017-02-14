@@ -218,6 +218,50 @@ var ga_request = (location  , data = {} , result = function(){} ,  sender = null
 
 
 
+var ga_cross_request = (url , data = {} , result = function () {} , fail = function(){}  , type = "POST" ) => {
+
+
+    $.ajax({
+        url : url,
+        data : data,
+        type: type,
+       // dataType : 'jsonp',
+        success: (r) =>
+        {
+            if(typeof  result === 'function')
+                return result(r);
+            else if (_.isObject(r))
+            {
+                if(result.async !== 'undefined' && typeof result.async === 'function')
+                {
+                    return result.async(r);
+                }
+            }else {
+                return null;
+            }
+        }
+
+    }).fail(function(xhr , status ){
+         if(typeof  fail === 'function'){
+             return fail(xhr , status );
+         }else{
+             let name         = "Se encontro un error desconocido , se genero directamente de ga_cross_request";
+             let error        = JSON.stringify(xhr);
+             let located      = "system | helper | library | interfaces | controller |";
+             let type         = "undefined";
+
+             console.log(status);
+             try {
+                 ga_error_handle(name , error , located  , type );
+             }catch (e){
+                 console.log("Error demasiado heavy !!");
+             }
+         }
+    });
+
+};
+
+
 /**
  * @todo ga_forms its send a form request and return values
  *

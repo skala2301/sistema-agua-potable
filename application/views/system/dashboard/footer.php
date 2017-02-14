@@ -78,6 +78,7 @@
             core.sidebar_(); // sidebar function 
         });
 
+
     </script>
 
 

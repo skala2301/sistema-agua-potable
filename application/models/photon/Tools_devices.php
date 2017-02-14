@@ -5,11 +5,18 @@ get_instance()->load->interfaces("Generic");
 class Tools_devices extends CI_Model implements Generic
 {
 
-    protected $tables = null ;
+    protected $tables                   = null ;
+
+    protected $url_particle             = null ;
+
+    protected $url_photon               = null ;
 
     protected $querys = [
         "apks" => [
             "is"   => "SELECT count(*) as 'count' FROM [table] WHERE [table].name = ? "
+        ],
+        "devices" => [
+            "find" => "SELECT particle_id as 'particle_id' FROM [table] where particle_id = ? "
         ]
     ];
 
@@ -24,9 +31,13 @@ class Tools_devices extends CI_Model implements Generic
         // TODO: Implement Load_() method.
         $this->load->database();
         $this->load->helper(["database"]);
+        $this->load->library("meta");
         $this->tables = new stdClass();
         $this->tables->meta         = $this->db->dbprefix("metadata");
         $this->tables->apk          = $this->db->dbprefix("package");
+        $this->tables->device       = $this->db->dbprefix("device");
+        $this->url_particle         = $this->meta->get_meta_value("particle_url");
+        $this->url_photon           = $this->meta->get_meta_value("particle_photon_get");
 
     }
 
@@ -50,6 +61,25 @@ class Tools_devices extends CI_Model implements Generic
         // TODO: Implement Object() method.
     }
 
+    public function find_devices($device_id = null ){
+
+        if(is_null($device_id))
+            $device_id = $this->input->post("device_id") ?? '' ;
+
+        $query = set_database_query(
+            $this->tables->device ,
+            "[table]" ,
+            $this->querys["devices"]["find"]
+        );
+
+        $result = $this->db->query($query ,[$device_id])->result();
+
+        return json_encode($result);
+    }
+
+    public function  get_particle_url () { return $this->url_particle; }
+
+    public function  get_photon_url() { return $this->url_photon; }
 
     public function find_packages($name = null ) : string {
         if($name === null )
@@ -97,7 +127,6 @@ class Tools_devices extends CI_Model implements Generic
             "id"        => $this->db->insert_id() ?? null
         ] ;
     }
-
 
     public function delete_package ($id){
         $this->db->trans_start();

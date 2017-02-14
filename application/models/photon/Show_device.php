@@ -138,6 +138,7 @@ class Show_device extends  CI_Model implements CoreInterface
     public function _title()
     {
         // TODO: Implement _title() method.
+        return "Dispositivos";
     }
 
     /**

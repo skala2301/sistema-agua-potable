@@ -15,7 +15,11 @@ PhotonInsert = new React.createClass({
         return {
             package : this.props.package,
             projects : [],
-            token : Math.random().toString(36).substring(1)
+            devices : {
+                error : true ,
+                msj   : "Agrega el token del dispositivo",
+                data  : []
+            }
         };
     },
 
@@ -54,8 +58,126 @@ PhotonInsert = new React.createClass({
     },
 
     change_text : function (e) {
-        this.setState({ token : e.target.value })
+       // this.setState({ token : e.target.value })
+        let device_url      = $("#particle_url").val();
+        var token           = e.target.value;
+        var $that           = this;
+
+
+        device_url = device_url.replace("{id_token}" , token );
+        console.log(device_url);
+
+        ga_cross_request(device_url , {} ,
+            function (k) {
+
+            if(token === '')
+            {
+                $that.setState({devices : {
+                    "error" : true,
+                    "msj"   : 'Token is a null :('
+                }});
+
+                return true ;
+            }
+
+            $that.setState({devices : {data : [] }});
+
+            var data = $.map(k , function (a,b) {
+
+                return [{
+                        "exist" : true ,
+                        "id"              : a.id ,
+                        "name"            : a.name  ,
+                        "connected"       : a.connected
+                }]
+
+            });
+
+            $that.setState({
+                    devices : {
+                        "error" : false ,
+                        "msj"   : "",
+                        "data"  : data
+                    }
+            });
+
+
+           /* $.map($that.state.devices.data , function (a,b ) {
+
+                photon_.get_devices(a.id , function (m) {
+                    var e = false ;
+
+
+                    if(m.lenght == 0 ){
+                        e = true ;
+                    }
+
+
+
+                })
+
+            });*/
+
+
+
+
+        } , function (xhr , status) {
+
+            let error = JSON.parse(xhr.responseText);
+            $that.setState({devices : {
+                "error" : true,
+                "msj"   : error.error_description
+            }});
+        } , "GET");
+
+        //this.setState({ devices : "hols" });
     },
+
+    render_table : function () {
+
+          console.log(this.state.devices.data);
+
+          if(this.state.devices == null)
+              return (<div></div>);
+
+          if(this.state.devices.error == true ){
+              return (<div style={{
+                  'text-align': 'center',
+                  'border': '1px solid red',
+                  'border-style': 'dashed'
+              }}>{this.state.devices.msj}</div>);
+          }
+
+
+          var data_Set = $.map(this.state.devices.data , function (a,b) {
+              return (
+                  <tr  id={a.id}>
+                      <td><input type="checkbox" className="form-control"  /></td>
+                      <td>{a.id }</td>
+                      <td>{a.name}</td>
+                      <td>{a.connected == true ? "Conectado" : "No conectado" }</td>
+                  </tr>
+              );
+          });
+
+          return (
+              <table className="table table-striped table-bordered table-hover order-column" id="data">
+                <thead>
+                <tr>
+                    <th>[A]</th>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Estado </th>
+                </tr>
+                </thead>
+                  <tbody>
+                      {data_Set}
+                  </tbody>
+              </table>
+          );
+
+    },
+
 
     render : function () {
         return (
@@ -113,56 +235,24 @@ PhotonInsert = new React.createClass({
                                     </div>
                                 </div>
                                 <div className="form-group">
-                                    <label className="col-md-3 control-label">Nombre del photon (*)</label>
-                                    <div className="col-md-6">
-                                        <div className="input-group">
-                                            <input name="photon-name"
-                                                   id="photon-name"
-                                                   className="form-control"
-                                                   placeholder="el nombre con que se identifica el photon"
-                                                   type="text" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="form-group">
-                                    <label className="col-md-3 control-label">Variable Global (*)</label>
-                                    <div className="col-md-6">
-                                        <div className="input-group">
-                                            <input className="form-control"
-                                                   id="photon-global"
-                                                   name="photon-global"
-                                                   placeholder="Nombre de la variable global"
-                                                   type="text" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="form-group">
-                                    <label className="col-md-3 control-label">ID photon (*)</label>
-                                    <div className="col-md-4">
-                                        <div className="input-icon">
-                                            <i className="fa fa-bell-o"></i>
-                                            <input
-                                                className="form-control"
-                                                name="photon-id"
-                                                id="photon-id"
-                                                placeholder="id photon en particle"
-                                                type="text" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="form-group">
-                                    <label className="col-md-3 control-label">Token Photon </label>
+                                    <label className="col-md-3 control-label">Token Dispositivo </label>
                                     <div className="col-md-4">
                                         <div className="input-icon right">
                                             <i className="fa fa-microphone"></i>
                                             <input className="form-control"
-                                                   value={this.state.token}
                                                    placeholder=""
                                                    name="photon-token"
                                                    id="photon-token"
                                                    onChange={this.change_text}
                                                    type="text" />
                                         </div>
+                                    </div>
+                                </div>
+
+
+                                <div className="form-actions">
+                                    <div className="row">
+                                        {this.render_table()}
                                     </div>
                                 </div>
 
@@ -177,6 +267,8 @@ PhotonInsert = new React.createClass({
                                         </div>
                                     </div>
                                 </div>
+
+
 
                             </div>
                         </form>

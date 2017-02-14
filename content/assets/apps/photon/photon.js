@@ -128,16 +128,14 @@ var photon_ = {
             "pkg"  :  $("#photon-package").val()
         } , function (a) {
 
-            console.log(a);
-
             try{
                 a = JSON.parse(a);
 
                 if(a.status )
                 {
-                    toast_.set_toast("photon creado con exito" , "Habemuss Photon" , toast_.success_data);
+                    toast_.set_toast(a.msj , "Habemuss Photon" , toast_.success_data);
                 }else{
-                    toast_.set_toast("Problemas al crear el photon intente denuevo" , "Opps!!" , toast_.warning_data);
+                    toast_.set_toast(a.msj  , "Opps!!" , toast_.warning_data);
                 }
 
                 $($form).find("input").each(function (){
@@ -154,7 +152,16 @@ var photon_ = {
 
         } );
 
-    }
+    },
 
+    get_devices : function ( device ,$function) {
+        ga_request({
+            model  : "tools_devices",
+            dir : "photon" ,
+            func : "find_devices"
+        } , {
+            device_id : device
+        } ,  $function );
+    }
 
 };

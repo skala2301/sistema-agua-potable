@@ -26,6 +26,8 @@
     <meta   id="ga_meta_viewport" content="width=device-width, initial-scale=1" name="viewport"/>
     <meta   id="ga_meta_description" content="<?php echo $description; ?>" name="description"/>
     <meta   id="ga_meta_author" content="<?php echo $author; ?>" name="author"/>
+
+
     <!-- garrobo oficial font -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
     <!-- system css -->
@@ -158,6 +160,11 @@
             System.import('<?= $s->script  ?>');
         <?php endforeach; ?>
 
+
+       /* Peace.options = {
+            restartOnRequestAfter: false,
+            ajax: false
+        };*/
 
     </script>
 

@@ -5,13 +5,15 @@ class New_device extends CI_Model implements CoreInterface
 {
 
 
-    protected  $table      = "device" ;
+    protected  $table               = "device" ;
+
 
     public function __construct()
     {
         parent::__construct();
 
         $this->load->database();
+        $this->load->model("photon/tools_devices");
         $this->table =  $this->db->dbprefix($this->table);
     }
 
@@ -36,7 +38,11 @@ class New_device extends CI_Model implements CoreInterface
     {
         // TODO: Implement _render() method.
 
-        return $this->load->view("photon/new_device" , [] , TRUE );
+        $particle_url = $this->tools_devices->get_particle_url();
+
+        return $this->load->view("photon/new_device" , [
+            "particle_url"  => $particle_url
+        ] , TRUE );
 
     }
 
@@ -87,6 +93,11 @@ class New_device extends CI_Model implements CoreInterface
     public function _css()
     {
         // TODO: Implement _css() method.
+
+        return print_css([
+            "content/assets/global/plugins/datatables/datatables.min.css",
+            "content/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css"
+        ]);
     }
 
     /**
@@ -141,6 +152,12 @@ class New_device extends CI_Model implements CoreInterface
                 "type"          => "text/javascript" ,
                 "location"      => "footer" ,
                 "script"        => site_url() . 'content/assets/apps/projects/project_loader.js',
+                "systemjs"      => false
+            ),
+            array(
+                "type"          => "text/javascript" ,
+                "location"      => "footer" ,
+                "script"        => site_url() . 'content/assets/pages/scripts/table-datatables-scroller.min.js',
                 "systemjs"      => false
             )
         ];

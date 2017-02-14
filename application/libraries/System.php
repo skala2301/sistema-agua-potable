@@ -39,7 +39,8 @@ class System {
                 "toast",
                 "content/assets/global/plugins/css/components.min.css",
                 "content/assets/global/plugins/css/plugins.min.css",
-                "content/assets/global/plugins/ladda/ladda-themeless.min.css"
+                "content/assets/global/plugins/ladda/ladda-themeless.min.css",
+                "content/assets/global/plugins/pace/themes/pace-theme-flash.css"
              
         ], "url");
 
@@ -52,7 +53,8 @@ class System {
             "reactdom" ,
              "render_vars",
             "toast",
-            "ga_toast"
+            "ga_toast",
+            "content/assets/global/plugins/pace/pace.min.js"
         ], "url" );
         
  
@@ -97,6 +99,7 @@ class System {
             "content/assets/layouts/global/scripts/quick-sidebar.min.js",
             "content/assets/global/plugins/ladda/spin.min.js",
             "content/assets/global/plugins/ladda/ladda.min.js"
+
         ], "url");
 
 

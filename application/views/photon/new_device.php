@@ -15,6 +15,9 @@
 </h3>
 
 
+<input type="hidden" value="<?= $particle_url; ?>" id="particle_url">
+
+
 <div id="render_view" class="row">
 
 <div class="col-md-12">
