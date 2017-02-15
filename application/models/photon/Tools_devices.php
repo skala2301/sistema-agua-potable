@@ -16,7 +16,10 @@ class Tools_devices extends CI_Model implements Generic
             "is"   => "SELECT count(*) as 'count' FROM [table] WHERE [table].name = ? "
         ],
         "devices" => [
-            "find" => "SELECT particle_id as 'particle_id' FROM [table] where particle_id = ? "
+            "find" =>  "SELECT gd.particle_id as 'particle_id' FROM [table] gd 
+                                INNER JOIN ga_package g  ON g.id = gd.id_package
+                                INNER JOIN ga_project gp ON gp.id = g.id_project
+                                WHERE particle_id = ? AND gp.id = ?"
         ]
     ];
 
@@ -61,10 +64,12 @@ class Tools_devices extends CI_Model implements Generic
         // TODO: Implement Object() method.
     }
 
-    public function find_devices($device_id = null ){
+    public function find_devices($device_id = null , $project = null ){
 
         if(is_null($device_id))
             $device_id = $this->input->post("device_id") ?? '' ;
+        if(is_null($project))
+            $project   = $this->input->post("project") ?? '';
 
         $query = set_database_query(
             $this->tables->device ,
@@ -72,7 +77,7 @@ class Tools_devices extends CI_Model implements Generic
             $this->querys["devices"]["find"]
         );
 
-        $result = $this->db->query($query ,[$device_id])->result();
+        $result = $this->db->query($query ,[$device_id , $project])->result();
 
         return json_encode($result);
     }

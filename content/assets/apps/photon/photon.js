@@ -87,9 +87,7 @@ var photon_ = {
 
             let block = {
                 "photon-project"        : true  ,
-                "photon-name"           : true ,
-                "photon-global"         : true,
-                "photon-id"             : true
+                "photon-token"          : true
             };
 
 
@@ -115,18 +113,54 @@ var photon_ = {
 
 
 
-        let serialize = $($form).serialize();
-        var l = Ladda.create($($form).find("button")[0]);
+        let serialize           = $($form).serialize();
+        var l                   = Ladda.create($($form).find("button")[0]);
+        var table               = $("#data-device").find("tbody").find("tr");
         l.start();
+
+
+        var device_data = [];
+        $(table).each(function () {
+
+            if($(this).attr("name")!= "disabled") {
+
+                try {
+                    let c = $(this).find("td input")[0];
+                    let i = $(this).find("td")[1];
+                    let n = $(this).find("td")[2];
+
+                    if ($(c).prop("checked")) {
+                        device_data.push({
+                            "id": $(i).html(),
+                            "name": $(n).html()
+                        });
+                    }
+
+                } catch (ex) {
+                    console.log(ex);
+                }
+            }
+
+        });
+
+        if(device_data.length == 0){
+            l.stop();
+            toast_.set_toast("todos los dispositivos ya han sido agregados"  ,
+                "Dispositivos" , toast_.warning_data);
+            return true;
+        }
+
 
         ga_request({
             model  : "new_device",
             dir : "photon" ,
             func : "create_photon"
         } , {
-            "data" : serialize,
-            "pkg"  :  $("#photon-package").val()
+            "data"      : serialize,
+            "pkg"       :  $("#photon-package").val(),
+            "device"    : JSON.stringify(device_data)
         } , function (a) {
+
 
             try{
                 a = JSON.parse(a);
@@ -154,13 +188,14 @@ var photon_ = {
 
     },
 
-    get_devices : function ( device ,$function) {
+    get_devices : function ( device , project   ,$function) {
         ga_request({
             model  : "tools_devices",
             dir : "photon" ,
             func : "find_devices"
         } , {
-            device_id : device
+            device_id : device,
+            project   : project
         } ,  $function );
     }
 

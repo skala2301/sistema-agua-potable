@@ -46,6 +46,7 @@ PhotonInsert = new React.createClass({
     shouldComponentUpdate: function(nextProps, nextState)
     {
 
+
         return true;
     },
 
@@ -55,18 +56,51 @@ PhotonInsert = new React.createClass({
             photon_.create(this);
             e.preventDefault();
         });
+
+
+        var that = this;
+        setInterval(function () {
+
+            var project_            = $("#photon-project").val();
+            var table               = $("#data-device").find("tbody").find("tr");
+
+            try{
+                $.map(that.state.devices.data , function (a,b ) {
+
+                    photon_.get_devices(a.id , project_ , function (m) {
+                        m = JSON.parse(m);
+                        $(m).map(function (x,i) {
+                            let pid         = i.particle_id;
+                            $(table).each(function () {
+                                if($(this).attr("id") === pid){
+                                    $(this).css({
+                                        "opacity" : "0.4",
+                                        "border": "2px solid red",
+                                        "border-style": "dashed",
+                                        "text-decoration" : "line-through"
+                                    }).attr("name" , "disabled");
+                                }
+                            });
+                        })
+
+                    });
+                });
+
+            }catch (e){
+                console.log(e);
+            }
+
+        } , 1000);
+
     },
 
     change_text : function (e) {
-       // this.setState({ token : e.target.value })
+
         let device_url      = $("#particle_url").val();
         var token           = e.target.value;
         var $that           = this;
 
-
         device_url = device_url.replace("{id_token}" , token );
-        console.log(device_url);
-
         ga_cross_request(device_url , {} ,
             function (k) {
 
@@ -102,25 +136,6 @@ PhotonInsert = new React.createClass({
             });
 
 
-           /* $.map($that.state.devices.data , function (a,b ) {
-
-                photon_.get_devices(a.id , function (m) {
-                    var e = false ;
-
-
-                    if(m.lenght == 0 ){
-                        e = true ;
-                    }
-
-
-
-                })
-
-            });*/
-
-
-
-
         } , function (xhr , status) {
 
             let error = JSON.parse(xhr.responseText);
@@ -133,9 +148,18 @@ PhotonInsert = new React.createClass({
         //this.setState({ devices : "hols" });
     },
 
+    change_selector : function (e) {
+        if(e.target.value != -1) {
+            $("#photon-token").removeAttr("disabled");
+        }
+        else {
+            $("#photon-token").attr("disabled" , "disabled");
+        }
+    },
+
     render_table : function () {
 
-          console.log(this.state.devices.data);
+          //console.log(this.state.devices.data);
 
           if(this.state.devices == null)
               return (<div></div>);
@@ -152,16 +176,16 @@ PhotonInsert = new React.createClass({
           var data_Set = $.map(this.state.devices.data , function (a,b) {
               return (
                   <tr  id={a.id}>
-                      <td><input type="checkbox" className="form-control"  /></td>
-                      <td>{a.id }</td>
-                      <td>{a.name}</td>
-                      <td>{a.connected == true ? "Conectado" : "No conectado" }</td>
+                      <td name="check_data"><input type="checkbox" className="form-control"  /></td>
+                      <td name="check_id">{a.id }</td>
+                      <td name="check_name">{a.name}</td>
+                      <td name="check_connect">{a.connected == true ? "Conectado" : "No conectado" }</td>
                   </tr>
               );
           });
 
           return (
-              <table className="table table-striped table-bordered table-hover order-column" id="data">
+              <table className="table table-striped table-bordered table-hover order-column" id="data-device">
                 <thead>
                 <tr>
                     <th>[A]</th>
@@ -220,10 +244,11 @@ PhotonInsert = new React.createClass({
                                 <div className="form-group">
                                     <label className="col-md-3 control-label">Proyecto (*)</label>
                                     <div className="col-md-4">
-                                        <select className="form-control"
+                                        <select onChange={this.change_selector}
+                                                className="form-control"
                                                 name="photon-project"
                                                 id="photon-project">
-                                            <option value="-1">Seleccione un proyecto.</option>
+                                            <option  value="-1">Seleccione un proyecto.</option>
                                             {
                                                 $(this.state.projects).map(function (k,v) {
                                                     return (
@@ -241,6 +266,7 @@ PhotonInsert = new React.createClass({
                                             <i className="fa fa-microphone"></i>
                                             <input className="form-control"
                                                    placeholder=""
+                                                   disabled = "disabled"
                                                    name="photon-token"
                                                    id="photon-token"
                                                    onChange={this.change_text}

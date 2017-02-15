@@ -247,6 +247,7 @@ class New_device extends CI_Model implements CoreInterface
         $data       = [];
         $serialize  =    $this->input->post("data");
         $pkg        =    $this->input->post("pkg");
+        $device     =    $this->input->post("device");
 
         if(is_null($serialize) || empty($serialize))
             return json_encode([
@@ -275,16 +276,32 @@ class New_device extends CI_Model implements CoreInterface
         }
 
 
-        $date = new DateTime("now");
+        $device     = json_decode($device);
+        $date       = new DateTime("now");
+        $insert_    = [];
 
-        $this->db->insert($this->table , [
+
+        foreach ( $device as $dev) {
+            $insert_[] = [
+              "name"                    =>   $dev->name,
+              "global_var"              =>   "" ,
+              "token_id"                =>   $data['photon-token'] ,
+              "particle_id"             =>   $dev->id,
+              "create_date"             =>   $date->format("y-m-d h:m:s"),
+              "id_package"              =>   $package->id
+            ];
+        }
+
+       /* $this->db->insert($this->table , [
              "name"             => $data['photon-name'] ?? "",
             "global_var"        => $data['photon-global'] ?? "",
             "token"             => $data['photon-token'] ?? "",
             "pid"               => $data['photon-id'] ?? "",
             "create_date"       => $date->format("y-m-d h:m:s"),
             "id_package"        => $package->id
-        ]);
+        ]);*/
+
+        $this->db->insert_batch($this->table , $insert_);
 
 
         if($this->db->affected_rows() == 0){

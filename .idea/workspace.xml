@@ -2,517 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de6a1901-27aa-4d3f-8da4-f0fde4ebe6e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/avatars/team9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/28.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/29.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/30.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/31.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/32.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/33.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/34.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/35.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/36.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/37.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/38.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/39.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/40.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/41.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/42.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/43.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/44.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/45.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/46.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/47.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/48.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/49.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/51.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/52.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/53.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/54.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/55.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/56.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/57.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/58.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/59.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/background/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/bg-opacity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/bg-white-lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/bg-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/inbox-nav-arrow-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/login/bg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/login/bg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/login/bg3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/login/bg4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/login/login-invert.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/login/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/logo-big-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/logo-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/logo-invert.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/logos/logo5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/img/page_general_search/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/bg/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/bg/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/bg/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/bg/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/bg/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/bg/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/blog/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/article.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/iphone_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/iphone_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/photo1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/photo2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/photo3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/photo4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/photo5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/photo6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/social_facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/social_googleplus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/social_linkedin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/social_rss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/email/social_twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/image1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/image2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/image3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/image4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/image5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/item_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/item_img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_07.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_08.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_09.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/gallery/preview_18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/invoice/walmart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/avatar1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/avatar1_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/avatar2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/avatar3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/avatar3_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/earth-rtl.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/earth.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/img1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/img1_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/img2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/img3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/img3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/img4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/logo_azteca.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/logo_conquer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/logo_metronic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/photo1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/photo2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/photo3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/profile-img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/profile-img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/pages/profile_user.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/avatar1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/avatar1_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/avatar2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/avatar3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/avatar3_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/bg-61.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/logo_azteca.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/logo_conquer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/logo_metronic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/people19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/photo1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/photo2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/photo3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/profile-img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/profile-img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/profile/profile_user.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/search/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/search/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/search/img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/search/img2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/search/img3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar80_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar80_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar80_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar80_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar80_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar80_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar80_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar80_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/avatar9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/teambg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/teambg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/teambg3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/teambg4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/teambg5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/teambg6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/teambg7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/users/teambg8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/works/img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/works/img2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/works/img3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/works/img4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/works/img5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/media/works/img6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/about.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/about.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/blog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/blog.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/coming-soon.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/coming-soon.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/contact.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/contact.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/error.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/error.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/faq.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/faq.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/image-crop.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/image-crop.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/invoice-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/invoice-2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/invoice.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/invoice.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/lock-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/lock-2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/lock.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/lock.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/login-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/login-2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/login-3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/login-3.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/login-4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/login-4.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/login-5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/login-5.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/login.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/portfolio.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/portfolio.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/pricing.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/pricing.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/profile-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/profile-2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/profile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/profile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/search.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/search.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/tasks.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/tasks.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/test.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/test.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/timeline-old.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/css/timeline-old.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-amcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-amcharts.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-echarts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-echarts.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-flotcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-flotcharts.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-flowchart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-flowchart.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-google.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-google.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-highcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-highcharts.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-highmaps.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-highmaps.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-highstock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-highstock.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-morris.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/charts-morris.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/coming-soon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/coming-soon.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-maxlength.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-maxlength.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-select-splitter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-select-splitter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-select.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-switch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-switch.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-tagsinput.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-tagsinput.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-touchspin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-bootstrap-touchspin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-code-editors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-code-editors.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-color-pickers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-color-pickers.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-context-menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-context-menu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-date-time-pickers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-date-time-pickers.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-dropdowns.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-dropdowns.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-editors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-editors.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-form-tools-2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-form-tools-2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-form-tools.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-form-tools.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-ion-sliders.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-ion-sliders.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-knob-dials.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-knob-dials.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-multi-select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-multi-select.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-nouisliders.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-nouisliders.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-select2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-select2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-typeahead.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/components-typeahead.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/contact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/contact.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/dashboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/dashboard.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ecommerce-dashboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ecommerce-dashboard.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ecommerce-orders-view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ecommerce-orders-view.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ecommerce-orders.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ecommerce-orders.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ecommerce-products-edit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ecommerce-products-edit.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ecommerce-products.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ecommerce-products.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-dropzone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-dropzone.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-editable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-editable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-fileupload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-fileupload.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-icheck.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-icheck.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-image-crop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-image-crop.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-input-mask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-input-mask.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-samples.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-samples.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-validation-md.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-validation-md.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-validation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-validation.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-wizard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/form-wizard.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/inbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/inbox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/jquery-gantt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/jquery-gantt.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/lock-2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/lock-2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/lock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/lock.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/login-4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/login-4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/login-5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/login-5.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/login.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/maps-google.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/maps-google.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/maps-vector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/maps-vector.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portfolio-1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portfolio-1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portfolio-2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portfolio-2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portfolio-3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portfolio-3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portfolio-4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portfolio-4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portlet-ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portlet-ajax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portlet-draggable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/portlet-draggable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/profile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/profile.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/search.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/search.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-bootstrap-master.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-bootstrap-master.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-ajax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-buttons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-buttons.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-colreorder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-colreorder.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-editable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-editable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-fixedheader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-fixedheader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-managed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-managed.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-responsive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-responsive.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-rowreorder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-rowreorder.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-scroller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/table-datatables-scroller.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/tasks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/tasks.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/timeline-2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/timeline-2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/timeline.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/timeline.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-alerts-api.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-alerts-api.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-blockui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-blockui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-bootbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-bootbox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-bootstrap-growl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-bootstrap-growl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-buttons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-buttons.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-confirmations.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-confirmations.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-datepaginator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-datepaginator.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-extended-modals.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-extended-modals.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-general.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-general.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-idletimeout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-idletimeout.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-modals.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-modals.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-nestable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-nestable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-notific8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-notific8.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-session-timeout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-session-timeout.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-toastr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-toastr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-tree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/ui-tree.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/widgets.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/pages/scripts/widgets.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/setup.json" afterPath="$PROJECT_DIR$/application/config/setup.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/libraries/System.php" afterPath="$PROJECT_DIR$/application/libraries/System.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/photon/New_device.php" afterPath="$PROJECT_DIR$/application/models/photon/New_device.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/photon/Show_device.php" afterPath="$PROJECT_DIR$/application/models/photon/Show_device.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/photon/Tools_devices.php" afterPath="$PROJECT_DIR$/application/models/photon/Tools_devices.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/photon/new_device.php" afterPath="$PROJECT_DIR$/application/views/photon/new_device.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/system/dashboard/footer.php" afterPath="$PROJECT_DIR$/application/views/system/dashboard/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/system/dashboard/header.php" afterPath="$PROJECT_DIR$/application/views/system/dashboard/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/assets/apps/photon/create_photon.js" afterPath="$PROJECT_DIR$/content/assets/apps/photon/create_photon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/assets/apps/photon/photon.js" afterPath="$PROJECT_DIR$/content/assets/apps/photon/photon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/assets/global/plugins/pace/themes/pace-theme-flash.css" afterPath="$PROJECT_DIR$/content/assets/global/plugins/pace/themes/pace-theme-flash.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js" afterPath="$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -538,14 +32,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="photon.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="photon.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/photon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="156" column="4" lean-forward="false" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="15" />
+            <state relative-caret-position="540">
+              <caret line="149" column="24" lean-forward="false" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
               <folding>
                 <element signature="n#!!block;n#init#0;n#init#0;n#!!block;n#photon_#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#create#0;n#create#0;n#!!block;n#photon_#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -554,8 +47,8 @@
       <file leaf-file-name="New_device.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/photon/New_device.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="159" column="56" lean-forward="false" selection-start-line="159" selection-start-column="56" selection-end-line="159" selection-end-column="56" />
+            <state relative-caret-position="326">
+              <caret line="255" column="24" lean-forward="false" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -583,16 +76,16 @@
       <file leaf-file-name="Tools_devices.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/photon/Tools_devices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="75" column="23" lean-forward="true" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
               <folding>
                 <element signature="n#Push_#0;n#Tools_devices#0;n#!!top" expanded="false" />
                 <element signature="n#Pull_#0;n#Tools_devices#0;n#!!top" expanded="false" />
                 <element signature="n#Request_#0;n#Tools_devices#0;n#!!top" expanded="false" />
                 <element signature="n#Object#0;n#Tools_devices#0;n#!!top" expanded="false" />
                 <element signature="n#delete_package#0;n#Tools_devices#0;n#!!top" expanded="false" />
-                <marker date="1487047726000" expanded="true" signature="331:393" ph="SELECT count... " />
-                <marker date="1487047726000" expanded="true" signature="453:523" ph="SELECT parti... " />
+                <marker date="1487131941000" expanded="true" signature="331:393" ph="SELECT count... " />
+                <marker date="1487131941000" expanded="true" signature="454:739" ph="SELECT gd.pa... " />
               </folding>
             </state>
           </provider>
@@ -614,29 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ga_functions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="258" column="10" lean-forward="true" selection-start-line="258" selection-start-column="10" selection-end-line="258" selection-end-column="10" />
-              <folding>
-                <element signature="e#7781#8277#0" expanded="false" />
-                <element signature="e#8698#13923#0" expanded="false" />
-                <element signature="e#14149#18251#0" expanded="false" />
-                <element signature="e#18325#19190#0" expanded="false" />
-                <element signature="e#19236#19635#0" expanded="false" />
-                <marker date="1487045293000" expanded="true" signature="2312:2339" ph="..." />
-                <marker date="1487045293000" expanded="true" signature="3353:3367" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create_photon.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create_photon.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/create_photon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+            <state relative-caret-position="320">
+              <caret line="80" column="62" lean-forward="true" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -722,12 +197,12 @@
         <option value="$PROJECT_DIR$/application/views/system/dashboard/footer.php" />
         <option value="$PROJECT_DIR$/content/assets/global/plugins/pace/themes/pace-theme-flash.css" />
         <option value="$PROJECT_DIR$/application/views/photon/new_device.php" />
-        <option value="$PROJECT_DIR$/application/models/photon/New_device.php" />
         <option value="$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js" />
-        <option value="$PROJECT_DIR$/content/assets/apps/photon/photon.js" />
-        <option value="$PROJECT_DIR$/application/models/photon/Tools_devices.php" />
         <option value="$PROJECT_DIR$/application/views/system/dashboard/header.php" />
+        <option value="$PROJECT_DIR$/application/models/photon/New_device.php" />
+        <option value="$PROJECT_DIR$/application/models/photon/Tools_devices.php" />
         <option value="$PROJECT_DIR$/content/assets/apps/photon/create_photon.js" />
+        <option value="$PROJECT_DIR$/content/assets/apps/photon/photon.js" />
       </list>
     </option>
   </component>
@@ -1354,7 +829,7 @@
       <workItem from="1485928256169" duration="3000" />
       <workItem from="1485998491615" duration="9638000" />
       <workItem from="1486173531450" duration="47805000" />
-      <workItem from="1486787210642" duration="44034000" />
+      <workItem from="1486787210642" duration="53425000" />
     </task>
     <task id="LOCAL-00001" summary="-cambios de look css , modificacion de templates para">
       <created>1486097642978</created>
@@ -1412,11 +887,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486954118091</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="enlace con dispositivos de particle">
+      <created>1487052601442</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1487052601442</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103027000" />
+    <option name="totallyTimeSpent" value="112418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="42" y="23" width="1238" height="777" extended-state="0" />
@@ -1474,7 +956,8 @@
     <MESSAGE value="interfaz generica , cambios de sistema , generador packacge" />
     <MESSAGE value="programacion de proyectos" />
     <MESSAGE value="creacion de devices , package y projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="creacion de devices , package y projects" />
+    <MESSAGE value="enlace con dispositivos de particle" />
+    <option name="LAST_COMMIT_MESSAGE" value="enlace con dispositivos de particle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1871,6 +1354,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/assets/pages/css/faq.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/system/dashboard/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="166" column="12" lean-forward="false" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="258" column="10" lean-forward="true" selection-start-line="258" selection-start-column="10" selection-end-line="258" selection-end-column="10" />
+          <folding>
+            <element signature="e#7781#8277#0" expanded="false" />
+            <element signature="e#8698#13923#0" expanded="false" />
+            <element signature="e#14149#18251#0" expanded="false" />
+            <element signature="e#18325#19190#0" expanded="false" />
+            <element signature="e#19236#19635#0" expanded="false" />
+            <marker date="1487045293000" expanded="true" signature="2312:2339" ph="..." />
+            <marker date="1487045293000" expanded="true" signature="3353:3367" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/libraries/Meta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1882,14 +1397,6 @@
             <marker date="1485738670000" expanded="true" signature="1665:1760" ph="SELECT [tabl... " />
             <marker date="1485738670000" expanded="true" signature="1803:1897" ph="SELECT [tabl... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/assets/pages/css/faq.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1912,68 +1419,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/photon/Tools_devices.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="75" column="23" lean-forward="true" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
           <folding>
             <element signature="n#Push_#0;n#Tools_devices#0;n#!!top" expanded="false" />
             <element signature="n#Pull_#0;n#Tools_devices#0;n#!!top" expanded="false" />
             <element signature="n#Request_#0;n#Tools_devices#0;n#!!top" expanded="false" />
             <element signature="n#Object#0;n#Tools_devices#0;n#!!top" expanded="false" />
             <element signature="n#delete_package#0;n#Tools_devices#0;n#!!top" expanded="false" />
-            <marker date="1487047726000" expanded="true" signature="331:393" ph="SELECT count... " />
-            <marker date="1487047726000" expanded="true" signature="453:523" ph="SELECT parti... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/system/dashboard/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="166" column="12" lean-forward="false" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/system/core/js/garrobo/ga_functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="258" column="10" lean-forward="true" selection-start-line="258" selection-start-column="10" selection-end-line="258" selection-end-column="10" />
-          <folding>
-            <element signature="e#7781#8277#0" expanded="false" />
-            <element signature="e#8698#13923#0" expanded="false" />
-            <element signature="e#14149#18251#0" expanded="false" />
-            <element signature="e#18325#19190#0" expanded="false" />
-            <element signature="e#19236#19635#0" expanded="false" />
-            <marker date="1487045293000" expanded="true" signature="2312:2339" ph="..." />
-            <marker date="1487045293000" expanded="true" signature="3353:3367" ph="..." />
+            <marker date="1487131941000" expanded="true" signature="331:393" ph="SELECT count... " />
+            <marker date="1487131941000" expanded="true" signature="454:739" ph="SELECT gd.pa... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/photon/New_device.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="159" column="56" lean-forward="false" selection-start-line="159" selection-start-column="56" selection-end-line="159" selection-end-column="56" />
+        <state relative-caret-position="326">
+          <caret line="255" column="24" lean-forward="false" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/create_photon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="80" column="62" lean-forward="true" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/photon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="156" column="4" lean-forward="false" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="15" />
+        <state relative-caret-position="540">
+          <caret line="149" column="24" lean-forward="false" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
           <folding>
             <element signature="n#!!block;n#init#0;n#init#0;n#!!block;n#photon_#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#create#0;n#create#0;n#!!block;n#photon_#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/assets/apps/photon/create_photon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
