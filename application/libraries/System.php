@@ -46,6 +46,8 @@ class System {
 
 
         $params['js_system'] = print_javascript([
+
+            "content/assets/global/plugins/pace/pace.min.js",
             "jquery",
             "systemjs",
             "babel" ,
@@ -53,8 +55,8 @@ class System {
             "reactdom" ,
              "render_vars",
             "toast",
-            "ga_toast",
-            "content/assets/global/plugins/pace/pace.min.js"
+            "ga_toast"
+
         ], "url" );
         
  
