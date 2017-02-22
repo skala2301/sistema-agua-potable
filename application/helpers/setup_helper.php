@@ -57,6 +57,16 @@ if(!function_exists("email_config")){
 }
 
 
+if(!function_exists("email_admin")){
+    function email_admin(){
+        return [
+            "from"   => "rolignu90@gmail.com",
+            "name"   => "SMART WATER ADMINISTRADOR"
+        ];
+    }
+}
+
+
 
 
 if(!function_exists('check_plugin'))

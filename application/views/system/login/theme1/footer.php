@@ -31,8 +31,8 @@ $js = print_javascript([
 
 
    $("#login_form").login({
-       "login" : ' <?php echo meta_lang($lang, [ "login", "inputs" , "login"], $file_lang); ?>'
-      , "wait" : '   <?php echo  meta_lang($lang, [ "login", "inputs" , "wait"], $file_lang); ?>'
+       "login" : 'LOGUEATE'
+      , "wait" : 'CARGANDO...'
    } , '<?php echo $query; ?>');
 
     var log = new login();

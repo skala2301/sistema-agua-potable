@@ -23,17 +23,23 @@ class Messages {
             $this->class->email->initialize(email_config());
         }
     }
+
+    public function get_config(){
+        return email_config();
+    }
+
     
     public function emailFrom($email = NULL , $name = NULL){
        $this->from_ = $email != NULL ? array(
            "from"   => $email,
            "name"   => $name != NULL ? $name : $email
-       ) : email_from();
+       ) : email_admin();
+
        return $this;
     }
     
     public function email_subject($subj){
-        $this->subject_ = $subj;
+        $this->subject_ = $subj ?? '';
         return $this;
     }
     
@@ -61,7 +67,7 @@ class Messages {
     }
     
     public function email_send(){
-         
+
         $this->class
                 ->email
                 ->from($this->from_['from'] , $this->from_['name']);
@@ -80,7 +86,7 @@ class Messages {
 
         return $this->class
                 ->email
-                ->send(false);
+                ->send(false) ?? false ;
     }
     
     public function debugger(){

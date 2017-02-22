@@ -21,6 +21,14 @@ class Profile_functions extends  CI_Model
     }
 
 
+
+
+    public function new_user(array $dt){
+         $this->db->insert($this->user_table , $dt);
+         return $this->db->affected_rows();
+    }
+
+
     public function get_rols(){
         $this->query = "SELECT * FROM $this->rol_table ";
         return $this->db->query($this->query)->result();

@@ -136,23 +136,6 @@
                         <label class="control-label">Ocupación</label>
                         <input name="occupation" type="text" placeholder="" value="<?php echo $details->occupation; ?>" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label class="control-label">Departamento</label>
-                        <select name="departments" id="departments" class="form-control select2-allow-clear">
-                            <option value="">Sin departamento</option>
-                            <?php foreach ($deptos as $depto): ?>
-                                <?php
-
-                                        if($depto->name == $details->location):
-                                            echo '<option selected value="' . $depto->name . '">' .  $depto->name . '</option>';
-                                        else:
-                                            echo '<option  value="' . $depto->name . '">' .  $depto->name . '</option>';
-                                        endif;
-
-                                ?>
-                            <?php endforeach; ?>
-                        </select>
-                    </div>
 
                     <div class="form-group">
                         <label class="control-label">Rol o Privilegio</label>

@@ -262,7 +262,7 @@ class Admin_core extends CI_Model implements CoreInterface {
 
             $this->db->insert($this->db->dbprefix("metadata") , [
                 $this->db->dbprefix("metadata") . ".key"        => "user_lang",
-                $this->db->dbprefix("metadata") . ".value"      => "en",
+                $this->db->dbprefix("metadata") . ".value"      => "es",
                 $this->db->dbprefix("metadata") . ".id_user"    => $id
             ]);
 

@@ -2343,10 +2343,10 @@ class CI_Email {
 	 */
 	protected function _set_error_message($msg, $val = '')
 	{
-		$CI =& get_instance();
-		$CI->lang->load('email');
+		/*$CI =& get_instance();
+		$CI->lang->load('email');*/
 
-		if (sscanf($msg, 'lang:%s', $line) !== 1 OR FALSE === ($line = $CI->lang->line($line)))
+		if (sscanf($msg, 'lang:%s', $line) !== 1 )
 		{
 			$this->_debug_msg[] = str_replace('%s', $val, $msg).'<br />';
 		}
@@ -2354,6 +2354,8 @@ class CI_Email {
 		{
 			$this->_debug_msg[] = str_replace('%s', $val, $line).'<br />';
 		}
+
+
 	}
 
 	// --------------------------------------------------------------------

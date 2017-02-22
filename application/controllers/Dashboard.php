@@ -1073,7 +1073,21 @@ class Dashboard extends CI_Controller {
 
        // $this->load->library("curl");
 
-        echo phpinfo();
+        //echo phpinfo();
+
+        $this->load->library("messages");
+
+
+        $this->messages
+                ->emailFrom()
+                ->email_subject("prueba nada mas ")
+                ->email_to("rolando.arriaza.m@gmail.com")
+                ->email_body("prueba de correo ")
+                ->email_send();
+
+        $this->messages->debugger();
+
+       // send_email("" , "rolando.arriaza.m@gmail.com" , "prueba");
     }
 
     /**

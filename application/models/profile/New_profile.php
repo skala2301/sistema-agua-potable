@@ -5,6 +5,9 @@ class New_profile extends CI_Model implements CoreInterface
 {
 
 
+    protected $user_table = "user";
+
+
     public function __construct()
     {
         parent::__construct();
@@ -31,7 +34,11 @@ class New_profile extends CI_Model implements CoreInterface
     {
         // TODO: Implement _render() method.
 
-        return  $this->load->view('system/profile/new_user' , [] ,TRUE);
+        $rols = $this->profile_functions->get_rols();
+
+        return  $this->load->view('system/profile/new_user' , [
+            "rols" => $rols
+        ] ,TRUE);
     }
 
     /**
@@ -224,7 +231,6 @@ class New_profile extends CI_Model implements CoreInterface
             $report['email'] = true;
         }
 
-
        return json_encode($report);
 
     }
@@ -232,6 +238,139 @@ class New_profile extends CI_Model implements CoreInterface
 
     public function save()
     {
+
+        $data = $this->input->post("data") ?? null ;
+        $rol  = $this->input->post("rol") ?? 0;
+
+        if(is_null($data))
+            return json_encode([
+                "status"        => false ,
+                "msj"           => "No existen datos a registrar"
+            ]);
+
+
+        $values = null ;
+        parse_str($data , $values);
+        $values = (object) $values;
+
+
+        $this->load->library("encryption");
+        $this->load->helper(["string"]);
+        $this->load->library("messages");
+
+        $this->encryption->initialize([
+            'cipher'       => 'aes-256',
+            'mode'         => 'ctr',
+        ]);
+
+
+
+        $password_              = random_string();
+        $password_encrypt       = $this->encryption->encrypt($password_);
+
+        $names = " " . $values->name . " " . $values->last_name;
+
+        /*Array
+        (
+            [name] => pruebaA
+            [last_name] => prueba2
+            [user] => pp248
+            [occupation] => TESTER QA
+            [email] => rolsignu90@gmail.com
+        )*/
+
+       // print_r($rol);
+       // return ;
+
+        $privs              = new stdClass();
+        $privs->parent      = $rol;
+        $privs->childs      = "";
+
+
+
+        /**
+         *
+         * {
+                "details": {
+                "name": "Administrador ",
+                "last_name": "Smart Water ",
+                "register": "2016-06-19",
+                "avatar": "3SbInzFt-avatar-smart.png",
+                "occupation": "Supervisor",
+                "location": "El Salvador",
+                "website": "www.smartwatersv.com"
+                },
+                "last_passwords": {}
+            }
+         *
+        **/
+
+        $date = new DateTime("now");
+        $data = new stdClass();
+        $data->details = new stdClass();
+        $data->details->name            = $values->name;
+        $data->details->last_name       = $values->last_name;
+        $data->details->register        = $date->format("Y-m-d");
+        $data->details->avatar          = "";
+        $data->details->location        = "El Salvador";
+        $data->details->website         = "No tengo sitio web :(";
+        $data->last_passwords           = new stdClass();
+
+
+        $result = $this->profile_functions->new_user([
+            "id_operator"       => random_string(),
+            "username"          => $values->user,
+            "email"             => $values->email,
+            "password"          => $password_encrypt,
+            "privileges"        => json_encode($privs),
+            "data"              => json_encode($data),
+            "active"            => 1,
+            "user_type"         => "-U"
+        ]);
+
+
+
+        if($result == 0 ){
+            return json_encode([
+                "status"        => false ,
+                "msj"           => "Ocurro un error al momento de procesar este usuario , intentar denuevo"
+            ]);
+        }
+
+
+        $this->messages
+            ->emailFrom()
+            ->email_subject("Contraseña para el sistema SMART WATER  ")
+            ->email_to($values->email)
+            ->email_body($this->email_body($password_ , $names , $values->user))
+            ->email_send();
+
+
+        return json_encode([
+            "status"        => true ,
+            "msj"           => "El usuario " . $values->user . " se ha creado con exito "
+        ]);
         
     }
+
+
+    protected function email_body ($password , $name , $user ){
+
+        $ci = &get_instance();
+        $ci->load->helper("url");
+
+        $url    = site_url();
+
+        return    "<body>"
+                . "<h2>Hola $name </h2>"
+                . "<p></p>"
+                . "<P>Tu usuario es $user</P>"
+                . "<p>Tu contraseña es <b>$password</b></p>"
+                . "<p></p>"
+                . "<a href='$url' >ingresa aqui </a>";
+
+    }
+
+
+
 }

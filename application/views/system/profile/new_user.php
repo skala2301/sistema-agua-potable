@@ -78,40 +78,6 @@
                         k.g(false);
                     });
 
-                    window.setInterval(function () {
-
-                        var m = $("#send_profile");
-                        var n = $("#name, #last_name, #occupation, #depto");
-
-
-                        var x = false;
-                        n.each(function () {
-                            if($(this).val() == '')
-                            {
-                                x= true ;
-                                return false;
-                            }
-                        });
-
-                        if(x) return false;
-
-                        if(e.a == 0){
-                            m.prop("disabled" , true);
-                            return false;
-                        }
-
-                        if(e.b == 0){
-                            m.prop("disabled" , true);
-                            return false;
-                        }
-
-                        if(e.a == 1 && e.b== 1)
-                        {
-                            m.prop("disabled" , false);
-                            return false;
-                        }
-
-                    },500);
 
                     $("#last_name").keyup(function () {
 
@@ -125,19 +91,52 @@
                             am.val(as.charAt(0).toLowerCase() + ad.charAt(0).toLowerCase()  + f);
                         }
                     });
+
+
+                    $("#rols").on("change" , function () {
+                        $("#send_profile").removeAttr("disabled");
+                    });
                     
                     
                     $("#send_profile").click(function () {
 
-                         var data = {
 
-                         };
+                        var toast = new ga_toast();
+                        toast.config();
 
-                         ga_request({ 'function': 'save' ,
-                             dir : 'profile' ,
-                             model : 'new_profile'
-                         } , data, function (k) {
+                         ga_request({
+                             'function'         : 'save' ,
+                             dir                : 'profile' ,
+                             model              : 'new_profile'
+                         } , {
+                             "data" : $("#profile_submit").serialize(),
+                             "rol"  : $("#rols").val()
+                         }, function (k) {
 
+
+                             try{
+
+                                 k = JSON.parse(k);
+
+                                 switch (k.status){
+
+                                     case true:
+                                         toast.set_toast(k.msj ,  '' );
+                                         break;
+                                     case false :
+                                         toast.set_toast(k.msj , toast.warning_data);
+                                         break;
+
+                                 }
+
+                             }catch (e){
+                                 ga_error_handle(
+                                     "Error en la vista new_user.php ",
+                                     JSON.stringify(e),
+                                     "view->profile->new_user.php",
+                                     "0"
+                                 );
+                             }
                          });
                     });
 
