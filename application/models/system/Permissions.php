@@ -12,8 +12,7 @@ class Permissions extends CI_Model implements CoreInterface
     public function __construct()
     {
 
-
-
+        $this->load->database();
     }
 
     /**
@@ -35,6 +34,9 @@ class Permissions extends CI_Model implements CoreInterface
     public function _render($params = NULL)
     {
         // TODO: Implement _render() method.
+        return $this->load->view("system/permission/show" , [
+
+        ] , TRUE );
     }
 
     /**
@@ -119,6 +121,14 @@ class Permissions extends CI_Model implements CoreInterface
     public function _javascript()
     {
         // TODO: Implement _javascript() method.
+        return [
+            array(
+                "type"          => "text/javascript" ,
+                "location"      => "header" ,
+                "script"        => site_url() . 'content/assets/apps/permission/perms.js',
+                "systemjs"      => false
+            )
+        ];
     }
 
     /**

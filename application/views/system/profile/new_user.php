@@ -122,6 +122,11 @@
 
                                      case true:
                                          toast.set_toast(k.msj ,  '' );
+                                         $("#profile_submit").each(function () {
+                                             try {
+                                                 $(this).val("");
+                                             }catch (e){}
+                                         });
                                          break;
                                      case false :
                                          toast.set_toast(k.msj , toast.warning_data);

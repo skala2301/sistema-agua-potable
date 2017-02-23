@@ -1,0 +1,1 @@
+[PageBar ;{"name":"Home" , "url":"<?php echo dashboard_url(); ?>"} , {"name" : "Usuarios" ,  "url" : ""}  , {"name" : "Permisos"}]
