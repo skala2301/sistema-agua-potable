@@ -1,15 +1,3 @@
-# ************************************************************
-# Sequel Pro SQL dump
-# Versión 4541
-#
-# http://www.sequelpro.com/
-# https://github.com/sequelpro/sequelpro
-#
-# Host: 127.0.0.1 (MySQL 5.6.34)
-# Base de datos: scada
-# Tiempo de Generación: 2017-02-22 03:46:37 +0000
-# ************************************************************
-
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -22,6 +10,7 @@
 
 # Volcado de tabla ga_device
 # ------------------------------------------------------------
+
 
 DROP TABLE IF EXISTS `ga_device`;
 

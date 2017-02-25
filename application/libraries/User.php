@@ -560,7 +560,7 @@ class User extends  Querybuild
             ->query(
                 $query,
                 [$token , null  , 'CM'])
-            ->result();
+            ->result() ;
 
     }
 
